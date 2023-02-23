@@ -6,11 +6,16 @@
 
 body {
     font-family: sans-serif;
-    background-color: #333337;
+    background-color: #62727B;
 }
 
+// **************
+// HEADER STYLING
+// **************
+
 header {
-    min-height: 5rem;
+    padding: 2rem;
+    background-color: #37474F;
 }
 
 header > div.container {
@@ -23,21 +28,58 @@ header > div.container {
     max-width: 98vw;
 }
 
-// .logo {
-    
-// }
+.logo {
+    margin-bottom: 0;
+    padding: 0.1rem 0.1rem 0.1rem 0.75rem;
+}
 
 .logo a {
     text-decoration: none;
-    color: lightgrey;
+    color: white;
+    font-size: 2rem;
+}
+
+.logo a:visited {
+    text-decoration: none;
+    color: white;
     font-size: 2rem;
 }
 
 .nav {
     display: flex;
-    font-size: 1.5rem;
-    color: lightgrey;
 }
+
+header nav ul {
+    padding: .5rem 0 0.1rem 0;
+    margin: 0;
+    clear: left; 
+    display: block;
+    text-align: right;
+}
+
+header nav li {
+    list-style-type: none;
+    display: inline-block;
+    padding-right: 0rem;
+}
+
+header nav li:not(:last-child) {
+    padding-right: 1.5rem;
+}
+
+header nav li a {
+    font-size: 1.8rem;
+    color: white;
+    text-decoration: none;
+}
+
+header nav li a:visited {
+    color: white;
+}
+
+// **************
+// FOOTER STYLING
+// **************
 
 .footer {
     position: fixed;
