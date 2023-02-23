@@ -87,11 +87,19 @@ header nav li a:visited {
     left: 0;
     right: 0;
     display: flex;
-    font-size: 1.2rem;
-    color: lightgrey;
+    padding-top: 1rem;
+    margin-top: 1rem;
+    height: 3rem;
+}
+
+.footer span {
+    font-size: 1.3rem;
+    color: white;
+    padding-left: 1rem;
 }
 
 .footer a {
     text-decoration: none;
-    color: lightgrey;
+    color: white;
+    font-size: 1.3rem;
 }
