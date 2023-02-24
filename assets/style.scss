@@ -7,9 +7,22 @@
     --primary-dark: #101F27;
 }
 
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
 body {
     font-family: "Source Sans Pro";
     background-color: var(--primary-light);
+    height: 100%;
+}
+
+.box {
+    display: flex;
+    flex-flow: column;
+    height: 100%;
+    overflow: auto;
 }
 
 // **************
@@ -19,6 +32,7 @@ body {
 header {
     padding: 2rem;
     background-color: var(--primary-color);
+    flex: 0 1 auto;
 }
 
 header > div.container {
@@ -80,20 +94,38 @@ header nav li a:visited {
     color: white;
 }
 
+// ************
+// BODY STYLING
+// ************
+
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    // min-height: 100%;
+    // margin-bottom: -2rem;
+    background-color: black;
+    flex: 1 1 auto;
+}
+
+.testdiv {
+    background-color: #FDD835;
+    height: 8rem;
+    width: 8rem;
+    border-radius: 8rem;
+}
+
 // **************
 // FOOTER STYLING
 // **************
 
 .footer {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
     display: flex;
     padding-top: 1rem;
-    margin-top: 1rem;
+    // margin-top: 1rem;
     height: 2rem;
     background-color: var(--primary-color);
+    flex: 0 1 40px;
 }
 
 .footer span {
