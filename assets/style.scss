@@ -2,10 +2,14 @@
     margin: 0;
     padding: 0;
     font-size: 62.5%;
-    --primary-color: #37474F;
-    --primary-light: #62727B;
-    --primary-dark: #101F27;
-    --secondary-color: #FDD835;
+    // --primary-color: #37474F;
+    // --primary-light: #62727B;
+    // --primary-dark: #101F27;
+    --primary-color: #263238;
+    --primary-light: #4f5b62;
+    --primary-dark: #000a12;
+    // --secondary-color: #FDD835;
+    --secondary-color: #ffb300;
     --secondary-light: #FFFF6b;
     --secondary-dark: #C5A600;
 }
@@ -107,7 +111,7 @@ header nav li a:visited {
     justify-content: center;
     // min-height: 100%;
     // margin-bottom: -2rem;
-    background-color: black;
+    background-color: var(--primary-dark);
     flex: 1 1 auto;
     overflow: hidden;
 }
@@ -123,7 +127,7 @@ header nav li a:visited {
     border-radius: 8rem;
     animation:
       bounce 3s
-      infinite alternate
+      1 both
       cubic-bezier(.2, .65, .6, 1);
     
 }
@@ -133,14 +137,14 @@ header nav li a:visited {
     font-size: 8rem;
     justify-content: center;
     align-content: center;
-    background-color: var(--secondary-light);
+    background-color: #18FFFF;
     height: 10rem;
     width: 10rem;
     border-radius: 10rem;
     animation:
       bounce2 4s
-      infinite alternate
-      cubic-bezier(.3, .65, .6, 1);
+      1 both
+      cubic-bezier(.3, .65, .9, 1);
 }
 
 .testdiv3 {
@@ -148,14 +152,14 @@ header nav li a:visited {
     font-size: 12rem;
     justify-content: center;
     align-content: center;
-    background-color: var(--secondary-dark);
+    background-color: #FF1744;
     height: 14rem;
     width: 14rem;
     border-radius: 10rem;
     animation:
       bounce 5s
-      infinite alternate
-      cubic-bezier(.2, .65, .6, 1);
+      1 both
+      cubic-bezier(.2, .65, .8, 1);
 }
 
 @keyframes bounce {
