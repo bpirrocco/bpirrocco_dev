@@ -7,6 +7,7 @@
   --primary-dark: #101F27;
   --secondary-color: #FDD835;
   --secondary-light: #FFFF6b;
+  --secondary-dark: #C5A600;
 }
 
 html, body {
@@ -125,6 +126,19 @@ header nav li a:visited {
   border-radius: 10rem;
   -webkit-animation: bounce2 4s infinite alternate cubic-bezier(0.3, 0.65, 0.6, 1);
           animation: bounce2 4s infinite alternate cubic-bezier(0.3, 0.65, 0.6, 1);
+}
+
+.testdiv3 {
+  display: flex;
+  font-size: 12rem;
+  justify-content: center;
+  align-content: center;
+  background-color: var(--secondary-dark);
+  height: 14rem;
+  width: 14rem;
+  border-radius: 10rem;
+  -webkit-animation: bounce 5s infinite alternate cubic-bezier(0.2, 0.65, 0.6, 1);
+          animation: bounce 5s infinite alternate cubic-bezier(0.2, 0.65, 0.6, 1);
 }
 
 @-webkit-keyframes bounce {
