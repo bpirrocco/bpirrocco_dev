@@ -115,8 +115,8 @@ header nav li a:visited {
   height: 10rem;
   width: 10rem;
   border-radius: 10rem;
-  -webkit-animation: bounce2 4s infinite alternate cubic-bezier(0.2, 0.65, 0.6, 1);
-          animation: bounce2 4s infinite alternate cubic-bezier(0.2, 0.65, 0.6, 1);
+  -webkit-animation: bounce2 4s infinite alternate cubic-bezier(0.3, 0.65, 0.6, 1);
+          animation: bounce2 4s infinite alternate cubic-bezier(0.3, 0.65, 0.6, 1);
 }
 
 @-webkit-keyframes bounce {
