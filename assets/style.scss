@@ -112,6 +112,10 @@ header nav li a:visited {
 }
 
 .testdiv {
+    display: flex;
+    font-size: 6rem;
+    justify-content: center;
+    align-content: center;
     background-color: var(--secondary-color);
     height: 8rem;
     width: 8rem;
@@ -124,6 +128,10 @@ header nav li a:visited {
 }
 
 .testdiv2 {
+    display: flex;
+    font-size: 8rem;
+    justify-content: center;
+    align-content: center;
     background-color: var(--secondary-light);
     height: 10rem;
     width: 10rem;
