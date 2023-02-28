@@ -5,6 +5,8 @@
     --primary-color: #37474F;
     --primary-light: #62727B;
     --primary-dark: #101F27;
+    --secondary-color: #FDD835;
+    --secondary-light: #FFFF6b;
 }
 
 html, body {
@@ -110,40 +112,63 @@ header nav li a:visited {
 }
 
 .testdiv {
-    background-color: #FDD835;
+    background-color: var(--secondary-color);
     height: 8rem;
     width: 8rem;
     border-radius: 8rem;
     animation:
       bounce 3s
-      infinite
-    //   cubic-bezier(.2, .65, .6, 1);
-      linear;
+      infinite alternate
+      cubic-bezier(.2, .65, .6, 1);
     
+}
+
+.testdiv2 {
+    background-color: var(--secondary-light);
+    height: 10rem;
+    width: 10rem;
+    border-radius: 10rem;
+    animation:
+      bounce2 4s
+      infinite alternate
+      cubic-bezier(.2, .65, .6, 1);
 }
 
 @keyframes bounce {
     0% {
-        // transform: translateY(0px);
+        transform: translateY(0px);
         // transform: translate3d(700px, -300px, 0px);
-        transform: translate3d(10rem, -10rem, 0px);
+        // transform: translate3d(10rem, -10rem, 0px);
     }
-    25% {
-        // transform: translate3d(0px, 0px, 0px);
-        transform: translate3d(0rem, 0rem, 0px);
+    // 25% {
+    //     // transform: translate3d(0px, 0px, 0px);
+    //     transform: translate3d(0rem, 0rem, 0px);
+    // }
+    // 50% {
+    //     transform: translateY(-300px);
+    //     // transform: translate3d(-700px, -300px, 0px);
+    //     // transform: translate3d(-10rem, -10rem, 0px);
+    // }
+    // 75% {
+    //     // transform: translate3d(0px, -700px, 0px)
+    //     transform: translate3d(0rem, -20rem, 0px);
+    // }
+    100% {
+        transform: translateY(-300px);
+        // transform: translate3d(700px, -300px, 0px);
+        // transform: translate3d(10rem, -10rem, 0px);
+    }
+}
+
+@keyframes bounce2 {
+    0% {
+        transform: translateY(0px);
     }
     50% {
-        // transform: translateY(-300px);
-        // transform: translate3d(-700px, -300px, 0px);
-        transform: translate3d(-10rem, -10rem, 0px);
-    }
-    75% {
-        // transform: translate3d(0px, -700px, 0px)
-        transform: translate3d(0rem, -20rem, 0px);
+        transform: translateY(-500px);
     }
     100% {
-        // transform: translate3d(700px, -300px, 0px);
-        transform: translate3d(10rem, -10rem, 0px);
+        transform: translateY(-300px);
     }
 }
 
