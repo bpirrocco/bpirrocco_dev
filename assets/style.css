@@ -104,7 +104,6 @@ header nav li a:visited {
 
 .testdiv {
   display: flex;
-  font-size: 6rem;
   justify-content: center;
   align-items: center;
   background-color: var(--secondary-color);
@@ -118,7 +117,6 @@ header nav li a:visited {
 .testdiv2 {
   --bounce-offset: -300px;
   display: flex;
-  font-size: 6rem;
   justify-content: center;
   align-items: center;
   background-color: #18FFFF;
@@ -133,7 +131,6 @@ header nav li a:visited {
 
 .testdiv3 {
   display: flex;
-  font-size: 6rem;
   justify-content: center;
   align-items: center;
   background-color: #FF1744;
@@ -142,9 +139,16 @@ header nav li a:visited {
   border-radius: 11rem;
 }
 
+.big {
+  font-size: 12rem;
+}
+
+.small {
+  font-size: 6rem;
+}
+
 .W {
   --bounce-offset: -295px;
-  font-size: 12rem;
   height: 14rem;
   width: 14rem;
   border-radius: 14rem;
