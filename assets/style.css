@@ -139,21 +139,13 @@ header nav li a:visited {
   border-radius: 11rem;
 }
 
-.big {
-  font-size: 12rem;
-}
-
-.small {
-  font-size: 6rem;
-}
-
 .W {
   --bounce-offset: -295px;
   height: 14rem;
   width: 14rem;
   border-radius: 14rem;
-  -webkit-animation: bounce 3s 1 both cubic-bezier(0.2, 0.65, 0.6, 1);
-          animation: bounce 3s 1 both cubic-bezier(0.2, 0.65, 0.6, 1);
+  -webkit-animation: bounce 4s 1 both cubic-bezier(0.2, 0.65, 0.8, 1);
+          animation: bounce 4s 1 both cubic-bezier(0.2, 0.65, 0.8, 1);
 }
 
 .L, .M {
@@ -212,6 +204,37 @@ header nav li a:visited {
   }
   100% {
     transform: translateY(var(--bounce-offset));
+  }
+}
+.titletext {
+  opacity: 0;
+  -webkit-animation: fade 3s ease 5s 1 backwards;
+          animation: fade 3s ease 5s 1 backwards;
+}
+
+.big {
+  font-size: 12rem;
+}
+
+.small {
+  font-size: 6rem;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }
 .footer {
