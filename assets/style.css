@@ -110,23 +110,13 @@ header nav li a:visited {
   height: var(--length);
   width: var(--length);
   border-radius: var(--length);
-  animation: bounce var(--duration) 1 both cubic-bezier(0.2, 0.65, 0.6, 1), fade 2s ease 7.5s reverse 1 forwards;
-}
-
-.testdiv3 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #FF1744;
-  height: 11rem;
-  width: 11rem;
-  border-radius: 11rem;
+  animation: bounce var(--duration) 1 both var(--cb), fade 2s ease 7.5s reverse 1 forwards;
 }
 
 .W {
   --bounce-offset: -295px;
   --length: 14rem;
-  --duration: 4s;
+  --duration: 5s;
   --cb: cubic-bezier(.2, .65, .6, 1);
 }
 
@@ -143,36 +133,43 @@ header nav li a:visited {
   --duration: 4s;
 }
 
+.L, .M {
+  --bounce-offset: -290px;
+  --length: 11rem;
+  background-color: #FF1744;
+}
+
+.L {
+  --duration: 4s;
+  --cb: cubic-bezier(.2, .65, .6, 1);
+}
+
 .C {
   --duration: 5s;
 }
 
-.L, .M {
-  --bounce-offset: -290px;
-}
-
-.L {
-  animation: bounce 4s 1 both cubic-bezier(0.2, 0.65, 0.6, 1), fade 2s ease 7.5s reverse 1 forwards;
-}
-
 .M {
+  --duration: 4.2s;
+  --cb: cubic-bezier(.2, 1.2, .6, 1);
   padding-left: 0.2rem;
   padding-bottom: 0.3rem;
-  animation: bounce 4.2s 1 both cubic-bezier(0.2, 1.2, 0.6, 1), fade 2s ease 7.5s reverse 1 forwards;
 }
 
 .O, .E2 {
   --bounce-offset: -300px;
+  --length: 8rem;
   padding-bottom: 0.5rem;
   padding-right: 0.1rem;
 }
 
 .O {
-  animation: bounce 2s 1 both cubic-bezier(0.2, 0.65, 0.6, 1), fade 2s ease 7.5s reverse 1 forwards;
+  --duration: 2s;
+  --cb: cubic-bezier(.2, .65, .6, 1);
 }
 
 .E2 {
-  animation: bounce 5s 1 both cubic-bezier(0.2, 0.65, 0.2, 1), fade 2s ease 7.5s reverse 1 forwards;
+  --duration: 5s;
+  --cb: cubic-bezier(.2, .65, .2, 1);
 }
 
 @-webkit-keyframes bounce {
@@ -214,7 +211,7 @@ header nav li a:visited {
     transform: translateY(var(--bounce-offset));
   }
 }
-.titletext {
+.welcometext {
   opacity: 0;
   -webkit-animation: fade 3s ease 4s 1 forwards;
           animation: fade 3s ease 4s 1 forwards;
