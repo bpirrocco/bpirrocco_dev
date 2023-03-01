@@ -110,8 +110,7 @@ header nav li a:visited {
   height: 8rem;
   width: 8rem;
   border-radius: 8rem;
-  -webkit-animation: bounce 3s 1 both cubic-bezier(0.2, 0.65, 0.6, 1);
-          animation: bounce 3s 1 both cubic-bezier(0.2, 0.65, 0.6, 1);
+  animation: bounce 3s 1 both cubic-bezier(0.2, 0.65, 0.6, 1), fade 2s ease 7.5s reverse 1 forwards;
 }
 
 .testdiv2 {
@@ -125,8 +124,7 @@ header nav li a:visited {
   height: 8rem;
   width: 8rem;
   border-radius: 8rem;
-  -webkit-animation: bounce2 4s 1 both cubic-bezier(0.3, 0.65, 0.9, 1);
-          animation: bounce2 4s 1 both cubic-bezier(0.3, 0.65, 0.9, 1);
+  animation: bounce2 4s 1 both cubic-bezier(0.3, 0.65, 0.9, 1), fade 2s ease 7.5s reverse 1 forwards;
 }
 
 .testdiv3 {
@@ -144,13 +142,11 @@ header nav li a:visited {
   height: 14rem;
   width: 14rem;
   border-radius: 14rem;
-  -webkit-animation: bounce 4s 1 both cubic-bezier(0.2, 0.65, 0.8, 1);
-          animation: bounce 4s 1 both cubic-bezier(0.2, 0.65, 0.8, 1);
+  animation: bounce 4s 1 both cubic-bezier(0.2, 0.65, 0.8, 1), fade 2s ease 7.5s reverse 1 forwards;
 }
 
 .C {
-  -webkit-animation: bounce2 5s 1 both cubic-bezier(0.3, 0.65, 0.9, 1);
-          animation: bounce2 5s 1 both cubic-bezier(0.3, 0.65, 0.9, 1);
+  animation: bounce2 5s 1 both cubic-bezier(0.3, 0.65, 0.9, 1), fade 2s ease 7.5s reverse 1 forwards;
 }
 
 .L, .M {
@@ -158,14 +154,13 @@ header nav li a:visited {
 }
 
 .L {
-  animation: bounce 4s 1 both cubic-bezier(0.2, 0.65, 0.6, 1), fade 2s ease 10s reverse 1 forwards;
+  animation: bounce 4s 1 both cubic-bezier(0.2, 0.65, 0.6, 1), fade 2s ease 7.5s reverse 1 forwards;
 }
 
 .M {
   padding-left: 0.2rem;
   padding-bottom: 0.3rem;
-  -webkit-animation: bounce 4.2s 1 both cubic-bezier(0.2, 1.2, 0.6, 1);
-          animation: bounce 4.2s 1 both cubic-bezier(0.2, 1.2, 0.6, 1);
+  animation: bounce 4.2s 1 both cubic-bezier(0.2, 1.2, 0.6, 1), fade 2s ease 7.5s reverse 1 forwards;
 }
 
 .O, .E2 {
@@ -175,13 +170,11 @@ header nav li a:visited {
 }
 
 .O {
-  -webkit-animation: bounce 2s 1 both cubic-bezier(0.2, 0.65, 0.6, 1);
-          animation: bounce 2s 1 both cubic-bezier(0.2, 0.65, 0.6, 1);
+  animation: bounce 2s 1 both cubic-bezier(0.2, 0.65, 0.6, 1), fade 2s ease 7.5s reverse 1 forwards;
 }
 
 .E2 {
-  -webkit-animation: bounce 5s 1 both cubic-bezier(0.2, 0.65, 0.2, 1);
-          animation: bounce 5s 1 both cubic-bezier(0.2, 0.65, 0.2, 1);
+  animation: bounce 5s 1 both cubic-bezier(0.2, 0.65, 0.2, 1), fade 2s ease 7.5s reverse 1 forwards;
 }
 
 @-webkit-keyframes bounce {
