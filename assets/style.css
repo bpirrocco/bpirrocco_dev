@@ -28,6 +28,10 @@ body {
   overflow: auto;
 }
 
+.hidden {
+  display: none;
+}
+
 header {
   padding: 2rem;
   background-color: var(--primary-color);
