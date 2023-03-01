@@ -107,24 +107,10 @@ header nav li a:visited {
   justify-content: center;
   align-items: center;
   background-color: var(--secondary-color);
-  height: 8rem;
-  width: 8rem;
-  border-radius: 8rem;
-  animation: bounce 3s 1 both cubic-bezier(0.2, 0.65, 0.6, 1), fade 2s ease 7.5s reverse 1 forwards;
-}
-
-.testdiv2 {
-  --bounce-offset: -300px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #18FFFF;
-  padding-right: 0.3rem;
-  padding-bottom: 0.5rem;
-  height: 8rem;
-  width: 8rem;
-  border-radius: 8rem;
-  animation: bounce2 4s 1 both cubic-bezier(0.3, 0.65, 0.9, 1), fade 2s ease 7.5s reverse 1 forwards;
+  height: var(--length);
+  width: var(--length);
+  border-radius: var(--length);
+  animation: bounce var(--duration) 1 both cubic-bezier(0.2, 0.65, 0.6, 1), fade 2s ease 7.5s reverse 1 forwards;
 }
 
 .testdiv3 {
@@ -139,14 +125,26 @@ header nav li a:visited {
 
 .W {
   --bounce-offset: -295px;
-  height: 14rem;
-  width: 14rem;
-  border-radius: 14rem;
-  animation: bounce 4s 1 both cubic-bezier(0.2, 0.65, 0.8, 1), fade 2s ease 7.5s reverse 1 forwards;
+  --length: 14rem;
+  --duration: 4s;
+  --cb: cubic-bezier(.2, .65, .6, 1);
+}
+
+.E, .C {
+  --bounce-offset: -300px;
+  --length: 8rem;
+  background-color: #18FFFF;
+  padding-right: 0.3rem;
+  padding-bottom: 0.5rem;
+  animation: bounce2 var(--duration) 1 both cubic-bezier(0.3, 0.65, 0.9, 1), fade 2s ease 7.5s reverse 1 forwards;
+}
+
+.E {
+  --duration: 4s;
 }
 
 .C {
-  animation: bounce2 5s 1 both cubic-bezier(0.3, 0.65, 0.9, 1), fade 2s ease 7.5s reverse 1 forwards;
+  --duration: 5s;
 }
 
 .L, .M {
