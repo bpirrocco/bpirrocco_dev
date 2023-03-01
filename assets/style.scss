@@ -120,7 +120,7 @@ header nav li a:visited {
     display: flex;
     font-size: 6rem;
     justify-content: center;
-    align-content: center;
+    align-items: center;
     background-color: var(--secondary-color);
     height: 8rem;
     width: 8rem;
@@ -133,14 +133,17 @@ header nav li a:visited {
 }
 
 .testdiv2 {
+    --bounce-offset: -300px;
     display: flex;
-    font-size: 8rem;
+    font-size: 6rem;
     justify-content: center;
-    align-content: center;
+    align-items: center;
     background-color: #18FFFF;
-    height: 10rem;
-    width: 10rem;
-    border-radius: 10rem;
+    padding-right: 0.3rem;
+    padding-bottom: 0.5rem;
+    height: 8rem;
+    width: 8rem;
+    border-radius: 8rem;
     animation:
       bounce2 4s
       1 both
@@ -149,17 +152,52 @@ header nav li a:visited {
 
 .testdiv3 {
     display: flex;
-    font-size: 12rem;
+    font-size: 6rem;
     justify-content: center;
-    align-content: center;
+    align-items: center;
     background-color: #FF1744;
+    height: 11rem;
+    width: 11rem;
+    border-radius: 11rem;
+    // animation:
+    //   bounce 5s
+    //   1 both
+    //   cubic-bezier(.2, .65, .8, 1);
+}
+
+.W {
+    --bounce-offset: -295px;
+    font-size: 12rem;
     height: 14rem;
     width: 14rem;
-    border-radius: 10rem;
+    border-radius: 14rem;
     animation:
-      bounce 5s
+      bounce 3s
       1 both
-      cubic-bezier(.2, .65, .8, 1);
+      cubic-bezier(.2, .65, .6, 1);
+}
+
+.L, .M{
+    --bounce-offset: -290px;
+    animation:
+      bounce 3s
+      1 both
+      cubic-bezier(.2, .65, .6, 1);
+}
+
+.M {
+    padding-left: 0.2rem;
+    padding-bottom: 0.3rem;
+}
+
+.O, .E2 {
+    --bounce-offset: -300px;
+    padding-bottom: 0.5rem;
+    padding-right: 0.1rem;
+    animation:
+      bounce 3s
+      1 both
+      cubic-bezier(.2, .65, .6, 1);
 }
 
 @keyframes bounce {
@@ -182,7 +220,10 @@ header nav li a:visited {
     //     transform: translate3d(0rem, -20rem, 0px);
     // }
     100% {
-        transform: translateY(-300px);
+        // transform: translateY(-300px);
+        transform: translateY(
+            var(--bounce-offset)
+        );
         // transform: translate3d(700px, -300px, 0px);
         // transform: translate3d(10rem, -10rem, 0px);
     }
@@ -196,7 +237,9 @@ header nav li a:visited {
         transform: translateY(-500px);
     }
     100% {
-        transform: translateY(-300px);
+        transform: translateY(
+            var(--bounce-offset)
+        );
     }
 }
 
