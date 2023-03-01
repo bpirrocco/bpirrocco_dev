@@ -148,23 +148,41 @@ header nav li a:visited {
           animation: bounce 4s 1 both cubic-bezier(0.2, 0.65, 0.8, 1);
 }
 
+.C {
+  -webkit-animation: bounce2 5s 1 both cubic-bezier(0.3, 0.65, 0.9, 1);
+          animation: bounce2 5s 1 both cubic-bezier(0.3, 0.65, 0.9, 1);
+}
+
 .L, .M {
   --bounce-offset: -290px;
-  -webkit-animation: bounce 3s 1 both cubic-bezier(0.2, 0.65, 0.6, 1);
-          animation: bounce 3s 1 both cubic-bezier(0.2, 0.65, 0.6, 1);
+}
+
+.L {
+  -webkit-animation: bounce 4s 1 both cubic-bezier(0.2, 0.65, 0.6, 1);
+          animation: bounce 4s 1 both cubic-bezier(0.2, 0.65, 0.6, 1);
 }
 
 .M {
   padding-left: 0.2rem;
   padding-bottom: 0.3rem;
+  -webkit-animation: bounce 4.2s 1 both cubic-bezier(0.2, 1.2, 0.6, 1);
+          animation: bounce 4.2s 1 both cubic-bezier(0.2, 1.2, 0.6, 1);
 }
 
 .O, .E2 {
   --bounce-offset: -300px;
   padding-bottom: 0.5rem;
   padding-right: 0.1rem;
-  -webkit-animation: bounce 3s 1 both cubic-bezier(0.2, 0.65, 0.6, 1);
-          animation: bounce 3s 1 both cubic-bezier(0.2, 0.65, 0.6, 1);
+}
+
+.O {
+  -webkit-animation: bounce 2s 1 both cubic-bezier(0.2, 0.65, 0.6, 1);
+          animation: bounce 2s 1 both cubic-bezier(0.2, 0.65, 0.6, 1);
+}
+
+.E2 {
+  -webkit-animation: bounce 5s 1 both cubic-bezier(0.2, 0.65, 0.2, 1);
+          animation: bounce 5s 1 both cubic-bezier(0.2, 0.65, 0.2, 1);
 }
 
 @-webkit-keyframes bounce {
@@ -189,7 +207,7 @@ header nav li a:visited {
     transform: translateY(0px);
   }
   50% {
-    transform: translateY(-500px);
+    transform: translateY(-510px);
   }
   100% {
     transform: translateY(var(--bounce-offset));
@@ -200,7 +218,7 @@ header nav li a:visited {
     transform: translateY(0px);
   }
   50% {
-    transform: translateY(-500px);
+    transform: translateY(-510px);
   }
   100% {
     transform: translateY(var(--bounce-offset));
@@ -208,8 +226,8 @@ header nav li a:visited {
 }
 .titletext {
   opacity: 0;
-  -webkit-animation: fade 3s ease 5s 1 backwards;
-          animation: fade 3s ease 5s 1 backwards;
+  -webkit-animation: fade 3s ease 4s 1 forwards;
+          animation: fade 3s ease 4s 1 forwards;
 }
 
 .big {

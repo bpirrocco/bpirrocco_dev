@@ -173,10 +173,20 @@ header nav li a:visited {
       cubic-bezier(.2, .65, .8, 1);
 }
 
+.C {
+    animation:
+      bounce2 5s
+      1 both
+      cubic-bezier(.3, .65, .9, 1);
+}
+
 .L, .M{
     --bounce-offset: -290px;
+}
+
+.L {
     animation:
-      bounce 3s
+      bounce 4s
       1 both
       cubic-bezier(.2, .65, .6, 1);
 }
@@ -184,16 +194,30 @@ header nav li a:visited {
 .M {
     padding-left: 0.2rem;
     padding-bottom: 0.3rem;
+    animation:
+      bounce 4.2s
+      1 both
+      cubic-bezier(.2, 1.2, .6, 1);
 }
 
 .O, .E2 {
     --bounce-offset: -300px;
     padding-bottom: 0.5rem;
     padding-right: 0.1rem;
+}
+
+.O {
     animation:
-      bounce 3s
+      bounce 2s
       1 both
       cubic-bezier(.2, .65, .6, 1);
+}
+
+.E2 {
+    animation:
+      bounce 5s
+      1 both
+      cubic-bezier(.2, .65, .2, 1);
 }
 
 @keyframes bounce {
@@ -230,7 +254,7 @@ header nav li a:visited {
         transform: translateY(0px);
     }
     50% {
-        transform: translateY(-500px);
+        transform: translateY(-510px);
     }
     100% {
         transform: translateY(
@@ -243,8 +267,8 @@ header nav li a:visited {
     opacity: 0;
     animation: 
         fade 3s
-        ease 5s
-        1 backwards;
+        ease 4s
+        1 forwards;
 }
 
 .big {
