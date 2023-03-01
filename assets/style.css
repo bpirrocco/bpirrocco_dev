@@ -158,8 +158,7 @@ header nav li a:visited {
 }
 
 .L {
-  -webkit-animation: bounce 4s 1 both cubic-bezier(0.2, 0.65, 0.6, 1);
-          animation: bounce 4s 1 both cubic-bezier(0.2, 0.65, 0.6, 1);
+  animation: bounce 4s 1 both cubic-bezier(0.2, 0.65, 0.6, 1), fade 2s ease 10s reverse 1 forwards;
 }
 
 .M {
