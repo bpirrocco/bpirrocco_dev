@@ -8,7 +8,15 @@ function unwelcome() {
     // welcome.style.display = 'none';
 }
 
+function showContent() {
+    Array.from(content).forEach((el) =>
+        el.style.display = 'flex'
+    );
+}
+
 // TODO: I need to turn this HTMLCollection object into an array, so I can iterate
 // over it
 
-setTimeout(unwelcome, 10000);
+unwelcome();
+// setTimeout(unwelcome, 10000);
+// setTimeout(showContent, 10010);
