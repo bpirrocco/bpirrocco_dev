@@ -62,7 +62,7 @@ header > div.container {
 .logo a:visited {
   text-decoration: none;
   color: white;
-  font-size: 2rem;
+  font-size: 3.5rem;
 }
 
 .nav {
@@ -80,10 +80,6 @@ header nav ul {
 header nav li {
   list-style-type: none;
   display: inline-block;
-  padding-right: 0rem;
-}
-
-header nav li:not(:last-child) {
   padding-right: 1.5rem;
 }
 
@@ -252,6 +248,7 @@ header nav li a:visited {
   flex-direction: column;
   min-height: 95%;
   min-width: 45%;
+  padding: 1rem;
 }
 
 .textbar {
@@ -269,7 +266,7 @@ h1 {
   font-size: 7rem;
   position: relative;
   left: 18rem;
-  top: 5rem;
+  top: 3rem;
 }
 
 h2 {
@@ -281,6 +278,7 @@ h2 {
   font-size: 5rem;
   position: relative;
   left: 10rem;
+  top: 1.5rem;
 }
 
 p {
@@ -301,6 +299,18 @@ p {
   font-size: 2.5rem;
   color: white;
   text-decoration: none;
+}
+
+.dot {
+  color: var(--secondary-color);
+}
+
+.logo .dot {
+  font-size: 3.5rem;
+}
+
+.header .dot {
+  font-size: 7rem;
 }
 
 .footer {
