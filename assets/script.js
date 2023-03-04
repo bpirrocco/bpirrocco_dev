@@ -1,11 +1,14 @@
+const welcome = document.getElementsByClassName("testdiv")
+
 function unwelcome() {
-    let el = document.getElementsByClassName("testdiv");
-    Array.from(el).forEach((el) =>
-        el.classList.add("hidden")
+    Array.from(welcome).forEach((el) =>
+        el.style.display = 'none'
     );
+    
+    // welcome.style.display = 'none';
 }
 
 // TODO: I need to turn this HTMLCollection object into an array, so I can iterate
 // over it
 
-unwelcome();
+setTimeout(unwelcome, 10000);
