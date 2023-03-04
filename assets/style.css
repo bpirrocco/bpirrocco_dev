@@ -17,7 +17,7 @@ html, body {
 
 body {
   font-family: "Source Sans Pro";
-  background-color: var(--primary-light);
+  background-color: var(--primary-dark);
   height: 100%;
 }
 
@@ -246,6 +246,35 @@ header nav li a:visited {
     opacity: 1;
   }
 }
+.header {
+  display: flex;
+  min-width: 20rem;
+  min-height: 20rem;
+  color: white;
+}
+
+.textbox {
+  display: flex;
+  min-width: 20rem;
+  min-height: 20rem;
+  color: white;
+}
+
+h1 {
+  color: white;
+  font-size: 20rem;
+}
+
+h2 {
+  color: white;
+  font-size: 15rem;
+}
+
+p {
+  color: white;
+  font-size: 6rem;
+}
+
 .footer {
   display: flex;
   padding-top: 1rem;
