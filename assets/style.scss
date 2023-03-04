@@ -316,8 +316,14 @@ p {
     font-size: 7rem;
 }
 
+// TODO: Decide which colors to use for link accents
+
+a:hover {
+    color: #18FFFF;
+}
+
 a:active {
-    color: var(--secondary-color);
+    color: #003737;
 }
 
 // **************
@@ -346,6 +352,10 @@ a:active {
     font-size: 1.3rem;
 }
 
+.footer a:hover {
+    color: var(--secondary-color)
+}
+
 .footer a:active {
-    color: var(--secondary-color);
+    color: var(--secondary-dark);
 }
