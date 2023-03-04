@@ -238,8 +238,11 @@ header nav li a {
     opacity: 1;
   }
 }
-.header {
-  display: flex;
+.headline {
+  display: none;
+  opacity: 0;
+  -webkit-animation: fade 3s ease 1 forwards;
+          animation: fade 3s ease 1 forwards;
   justify-content: flex-start;
   flex-direction: column;
   min-height: 95%;
@@ -248,7 +251,10 @@ header nav li a {
 }
 
 .textbar {
-  display: flex;
+  display: none;
+  opacity: 0;
+  -webkit-animation: fade 3s ease 1 forwards;
+          animation: fade 3s ease 1 forwards;
   min-height: 100%;
   min-width: 50%;
 }

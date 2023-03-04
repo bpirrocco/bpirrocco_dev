@@ -239,8 +239,13 @@ header nav li a {
     }
 }
 
-.header {
-    display: flex;
+.headline {
+    display: none;
+    opacity: 0;
+    animation: 
+        fade 3s
+        ease
+        1 forwards;
     justify-content: flex-start;
     flex-direction: column;
     // background-color: blue;
@@ -250,7 +255,12 @@ header nav li a {
 }
 
 .textbar {
-    display: flex;
+    display: none;
+    opacity: 0;
+    animation: 
+        fade 3s
+        ease
+        1 forwards;
     min-height: 100%;
     // background-color: red;
     min-width: 50%;
