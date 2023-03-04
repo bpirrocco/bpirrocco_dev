@@ -59,14 +59,9 @@ header > div.container {
   font-size: 3.5rem;
 }
 
-.logo a:visited {
-  text-decoration: none;
-  color: white;
-  font-size: 3.5rem;
-}
-
 .nav {
   display: flex;
+  align-items: baseline;
 }
 
 header nav ul {
@@ -83,14 +78,15 @@ header nav li {
   padding-right: 1.5rem;
 }
 
+.secondary {
+  color: var(--secondary-color);
+  font-size: 1.8rem;
+}
+
 header nav li a {
   font-size: 1.8rem;
   color: white;
   text-decoration: none;
-}
-
-header nav li a:visited {
-  color: white;
 }
 
 .content {
@@ -313,6 +309,10 @@ p {
   font-size: 7rem;
 }
 
+a:active {
+  color: var(--secondary-color);
+}
+
 .footer {
   display: flex;
   padding-top: 1rem;
@@ -332,4 +332,8 @@ p {
   text-decoration: none;
   color: white;
   font-size: 1.3rem;
+}
+
+.footer a:active {
+  color: var(--secondary-color);
 }/*# sourceMappingURL=style.css.map */
