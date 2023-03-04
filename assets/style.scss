@@ -251,15 +251,16 @@ header nav li a:visited {
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
-    min-height: 100%;
-    // max-width: 50%;
+    // background-color: blue;
+    min-height: 95%;
+    min-width: 45%;
 }
 
-.textbox {
+.textbar {
     display: flex;
     min-height: 100%;
-    // min-width: 100%;
-    // max-width: 50%;
+    // background-color: red;
+    min-width: 50%;
 }
 
 // ************
@@ -268,9 +269,10 @@ header nav li a:visited {
 
 h1 {
     color: white;
-    font-size: 5rem;
+    font-size: 7rem;
     position: relative;
-    left: 20rem;
+    left: 18rem;
+    top: 5rem;
 }
 
 h2 {
@@ -286,12 +288,22 @@ h2 {
 
 p {
     color: white;
-    font-size: 3rem;
+    font-size: 2.5rem;
+    border-style: none solid solid none;
+    border-color: var(--secondary-color);
+    border-width: 1px;
+    padding: 0.5rem;
 }
 
 .homep {
     position: relative;
-    top: 20rem;
+    top: 34rem;
+}
+
+.inlinea {
+    font-size: 2.5rem;
+    color: white;
+    text-decoration: none;
 }
 
 // **************
