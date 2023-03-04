@@ -260,6 +260,10 @@ header nav li a:visited {
   min-width: 50%;
 }
 
+.textbox {
+  max-width: 80%;
+}
+
 h1 {
   color: white;
   font-size: 7rem;
