@@ -323,6 +323,15 @@ a:active {
   color: #003737;
 }
 
+.secsquare {
+  width: 80%;
+  height: 55%;
+  background-color: var(--secondary-color);
+  position: relative;
+  right: 50%;
+  bottom: 60%;
+}
+
 .footer {
   display: flex;
   padding-top: 1rem;
