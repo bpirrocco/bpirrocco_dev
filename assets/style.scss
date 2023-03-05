@@ -418,10 +418,6 @@ a:active {
     font-size: 2rem;
 }
 
-#contactinfo {
-    opacity: 0;
-}
-
 .contactinfo li {
     list-style-type: none;
     padding-right: 1.5rem;
@@ -432,14 +428,14 @@ a:active {
     animation: 
         fade 1s
         ease
-        1;
+        1 forwards;
 }
 
 .disappear {
     animation:
         fade 1s
         ease reverse
-        1;
+        1 forwards;
 }
 
 .textbox {

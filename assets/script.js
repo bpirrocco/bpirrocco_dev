@@ -35,14 +35,10 @@ if (window.location.pathname == '/index/') {
 const contact = document.getElementById("contact");
 contact.addEventListener("mouseenter", (event) => {
     const contactInfo = document.getElementById("contactInfo");
-    if (contactInfo.classList.contains("disappear")){
-        contactInfo.classList.remove("disappear");
-    };
-    if (contactInfo.classList.contains("hidden")) {
-        contactInfo.classList.replace("hidden", "reveal");
-    }else {
-        contactInfo.classList.add("reveal");
-    }
+    contactInfo.classList.remove("disappear");
+    contactInfo.classList.remove("hidden");
+    contactInfo.classList.add("reveal")
+    
 });
 
 // contact.addEventListener("mouseleave", (event) => {
@@ -53,9 +49,7 @@ contact.addEventListener("mouseenter", (event) => {
 
 contact.addEventListener("mouseleave", (event) => {
     const contactInfo = document.getElementById("contactInfo");
-    if (contactInfo.classList.contains("reveal")){
-        contactInfo.classList.remove("reveal");
-    };
+    contactInfo.classList.remove("reveal");
     contactInfo.classList.add("disappear");
 
     // setTimeout(function() {
