@@ -301,15 +301,17 @@ h2 {
 p {
     color: white;
     font-size: 2.5rem;
-    border-style: none solid solid none;
-    border-color: var(--secondary-color);
-    border-width: 1px;
-    padding: 0.5rem;
 }
+
+
 
 .homep {
     position: relative;
     top: 34rem;
+    border-style: none solid solid none;
+    border-color: var(--secondary-color);
+    border-width: 1px;
+    padding: 0.5rem;
 }
 
 .inlinea {
@@ -373,7 +375,6 @@ a:active {
 
 .redsquare {
     display: flex;
-    flex-direction: column-reverse;
     background-color: #FF1744;
     width: 150vw;
     height: 45vh;
