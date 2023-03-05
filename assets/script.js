@@ -1,6 +1,10 @@
-const welcome = document.getElementsByClassName("testdiv")
-const headline = document.getElementById("headline")
-const textbar = document.getElementById("textbar")
+// ******************
+// HOMEPAGE SCRIPTING
+// ******************
+
+const welcome = document.getElementsByClassName("testdiv");
+const headline = document.getElementById("headline");
+const textbar = document.getElementById("textbar");
 
 function unwelcome() {
     Array.from(welcome).forEach((el) =>
@@ -19,5 +23,19 @@ function showContent() {
 // over it
 
 // unwelcome();
-setTimeout(unwelcome, 10000);
-setTimeout(showContent, 10010);
+if (window.location.pathname == '/index/') {
+    setTimeout(unwelcome, 10000);
+    setTimeout(showContent, 10010);
+}
+
+// ********************
+// ABOUT PAGE SCRIPTING
+// ********************
+
+const contact = document.getElementById("contact");
+contact.addEventListener("mouseover", showContact);
+
+function showContact() {
+    contact.classList.remove("hidden");
+    contact.classList.add("reveal");
+}

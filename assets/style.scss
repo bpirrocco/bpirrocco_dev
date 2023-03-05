@@ -397,10 +397,12 @@ a:active {
 .contact {
     position: absolute;
     display: flex;
-    left: 30%;
+    flex-direction: column;
+    left: 20%;
     top: 60%;
     width: 15rem;
     height: 3rem;
+    padding: 1rem;
     background-color: #18FFFF;
     align-items: center;
     justify-content: center;
@@ -414,6 +416,19 @@ a:active {
 .contact p {
     text-align: center;
     font-size: 2rem;
+}
+
+.contactinfo li {
+    list-style-type: none;
+    padding-right: 1.5rem;
+    font-size: 1.8rem;
+}
+
+.reveal {
+    animation: 
+        fade 3s
+        ease
+        1 forwards;
 }
 
 .textbox {
