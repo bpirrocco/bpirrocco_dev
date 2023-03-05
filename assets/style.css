@@ -374,7 +374,7 @@ a:active {
   position: absolute;
   left: 20%;
   top: 60%;
-  width: 15rem;
+  width: 28rem;
   height: 3rem;
   padding: 1rem;
   background-color: #18FFFF;
@@ -390,12 +390,24 @@ a:active {
 .contact p {
   text-align: center;
   font-size: 2rem;
+  margin-bottom: 2rem;
 }
 
 .contactinfo li {
   list-style-type: none;
-  padding-right: 1.5rem;
-  font-size: 2rem;
+  font-size: 1.8rem;
+  line-height: 2.5rem;
+  padding: 0.5rem;
+}
+
+.contactinfo li em {
+  font-size: 1.8rem;
+}
+
+.contactinfo li a {
+  font-size: 1.8rem;
+  color: black;
+  text-decoration: none;
 }
 
 .reveal {
