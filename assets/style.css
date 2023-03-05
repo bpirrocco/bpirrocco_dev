@@ -399,13 +399,13 @@ a:active {
 }
 
 .reveal {
-  -webkit-animation: fade 1s ease 1 forwards;
-          animation: fade 1s ease 1 forwards;
+  -webkit-animation: fade 2s ease-in 1 forwards;
+          animation: fade 2s ease-in 1 forwards;
 }
 
 .disappear {
-  -webkit-animation: fadeout 1s ease 1 forwards;
-          animation: fadeout 1s ease 1 forwards;
+  -webkit-animation: fadeout 2s ease-out 1 forwards;
+          animation: fadeout 2s ease-out 1 forwards;
 }
 
 @-webkit-keyframes fadeout {

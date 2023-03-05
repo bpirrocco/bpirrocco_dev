@@ -426,15 +426,15 @@ a:active {
 
 .reveal {
     animation: 
-        fade 1s
-        ease
+        fade 2s
+        ease-in
         1 forwards;
 }
 
 .disappear {
     animation:
-        fadeout 1s
-        ease
+        fadeout 2s
+        ease-out
         1 forwards;
 }
 
