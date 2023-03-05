@@ -349,6 +349,11 @@ a:active {
   flex-direction: column-reverse;
 }
 
+.secsquare div {
+  padding-left: 1rem;
+  line-height: 6rem;
+}
+
 .redsquare {
   display: flex;
   background-color: #FF1744;
@@ -356,9 +361,17 @@ a:active {
   height: 45vh;
 }
 
+.redsquare div {
+  padding: 1rem 0.5rem 0.5rem 2rem;
+  max-width: 30%;
+}
+
+.textbox {
+  text-align: left;
+}
+
 .dark {
   color: black;
-  text-align: center;
 }
 
 .footer {
