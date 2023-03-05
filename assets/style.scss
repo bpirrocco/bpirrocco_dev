@@ -394,6 +394,28 @@ a:active {
     margin-bottom: 5rem;
 }
 
+.contact {
+    position: absolute;
+    display: flex;
+    left: 30%;
+    top: 60%;
+    width: 15rem;
+    height: 3rem;
+    background-color: #18FFFF;
+    align-items: center;
+    justify-content: center;
+    transition: height 2s ease;
+}
+
+.contact:hover {
+    height: 20rem;
+}
+
+.contact p {
+    text-align: center;
+    font-size: 2rem;
+}
+
 .textbox {
     text-align: left;
 }
