@@ -366,8 +366,26 @@ a:active {
   max-width: 30%;
 }
 
+.redsquare p {
+  margin-bottom: 5rem;
+}
+
 .textbox {
   text-align: left;
+}
+
+.textbox a {
+  font-size: 2.5rem;
+  text-decoration: none;
+  color: black;
+}
+
+.textbox a:hover {
+  color: #18FFFF;
+}
+
+.textbox a:active {
+  color: #003737;
 }
 
 .dark {
