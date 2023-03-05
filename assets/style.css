@@ -323,6 +323,10 @@ a:active {
   color: #003737;
 }
 
+.about {
+  display: flex;
+}
+
 .secsquare {
   width: 80%;
   height: 55%;
@@ -330,6 +334,13 @@ a:active {
   position: relative;
   right: 50%;
   bottom: 60%;
+}
+
+.redsquare {
+  position: relative;
+  background-color: #FF1744;
+  width: 40%;
+  height: 80%;
 }
 
 .footer {
