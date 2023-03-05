@@ -33,7 +33,11 @@ if (window.location.pathname == '/index/') {
 // ********************
 
 const contact = document.getElementById("contact");
-contact.addEventListener("mouseover", showContact);
+contact.addEventListener("mouseenter", (event) => {
+    const contactInfo = document.getElementById("contactInfo");
+    contactInfo.classList.remove("hidden");
+    contactInfo.classList.add("reveal");
+});
 
 function showContact() {
     contact.classList.remove("hidden");
