@@ -372,8 +372,6 @@ a:active {
 
 .contact {
   position: absolute;
-  display: flex;
-  flex-direction: column;
   left: 20%;
   top: 60%;
   width: 15rem;
@@ -382,7 +380,7 @@ a:active {
   background-color: #18FFFF;
   align-items: center;
   justify-content: center;
-  transition: height 2s ease;
+  transition: height 5s ease;
 }
 
 .contact:hover {
@@ -394,6 +392,10 @@ a:active {
   font-size: 2rem;
 }
 
+#contactinfo {
+  opacity: 0;
+}
+
 .contactinfo li {
   list-style-type: none;
   padding-right: 1.5rem;
@@ -401,8 +403,12 @@ a:active {
 }
 
 .reveal {
-  -webkit-animation: fade 3s ease 1 forwards;
-          animation: fade 3s ease 1 forwards;
+  -webkit-animation: fade 1s ease 1;
+          animation: fade 1s ease 1;
+}
+
+.disappear {
+  animation: fade 1s ease reverse 1;
 }
 
 .textbox {
