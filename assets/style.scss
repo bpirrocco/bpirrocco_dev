@@ -421,7 +421,7 @@ a:active {
 .contactinfo li {
     list-style-type: none;
     padding-right: 1.5rem;
-    font-size: 1.8rem;
+    font-size: 2rem;
 }
 
 .reveal {
@@ -433,9 +433,18 @@ a:active {
 
 .disappear {
     animation:
-        fade 1s
-        ease reverse
+        fadeout 1s
+        ease
         1 forwards;
+}
+
+@keyframes fadeout {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
 }
 
 .textbox {

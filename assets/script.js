@@ -35,9 +35,12 @@ if (window.location.pathname == '/index/') {
 const contact = document.getElementById("contact");
 contact.addEventListener("mouseenter", (event) => {
     const contactInfo = document.getElementById("contactInfo");
-    contactInfo.classList.remove("disappear");
     contactInfo.classList.remove("hidden");
-    contactInfo.classList.add("reveal")
+    if (contactInfo.classList.contains("disappear")){
+        contactInfo.classList.replace("disappear", "reveal");
+    }else {
+        contactInfo.classList.add("reveal");
+    }
     
 });
 
@@ -49,12 +52,11 @@ contact.addEventListener("mouseenter", (event) => {
 
 contact.addEventListener("mouseleave", (event) => {
     const contactInfo = document.getElementById("contactInfo");
-    contactInfo.classList.remove("reveal");
-    contactInfo.classList.add("disappear");
+    contactInfo.classList.replace("reveal", "disappear");
 
-    // setTimeout(function() {
-    //     contactInfo.classList.add("hidden");
-    // }, 1000);
+    setTimeout(function() {
+        contactInfo.classList.add("hidden");
+    }, 5000);
 })
 
 function showContact() {
