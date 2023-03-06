@@ -503,8 +503,10 @@ a:active {
     display: flex;
     max-width: 60%;
     min-height: 60%;
-    border-style: solid;
-    border-color: #18FFFF;
+    padding: 1rem;
+    // border-style: solid;
+    // border-color: #18FFFF;
+    box-shadow: 0px 0px 10px 10px #18FFFF;
     animation: 
         slideIn 2s
         ease

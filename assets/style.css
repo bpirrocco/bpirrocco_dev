@@ -477,8 +477,8 @@ a:active {
   display: flex;
   max-width: 60%;
   min-height: 60%;
-  border-style: solid;
-  border-color: #18FFFF;
+  padding: 1rem;
+  box-shadow: 0px 0px 10px 10px #18FFFF;
   -webkit-animation: slideIn 2s ease 1 forwards;
           animation: slideIn 2s ease 1 forwards;
 }
