@@ -494,6 +494,46 @@ a:active {
 .third {
     width: 33.3%;
     height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pCard {
+    display: flex;
+    max-width: 60%;
+    min-height: 60%;
+    border-style: solid;
+    border-color: #18FFFF;
+    animation: 
+        slideIn 2s
+        ease
+        1 forwards;
+}
+
+.slideInRev {
+    animation:
+        slideInRev 2s 
+        ease
+        1 forwards;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-600px);
+    }
+    to {
+        transform: translateY(0px);
+    }
+}
+
+@keyframes slideInRev {
+    from {
+        transform: translateY(600px);
+    }
+    to {
+        transform: translateY(0px);
+    }
 }
 
 // **************
