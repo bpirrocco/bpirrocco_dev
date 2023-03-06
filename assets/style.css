@@ -465,6 +465,11 @@ a:active {
   color: black;
 }
 
+.third {
+  width: 33.3%;
+  height: 100%;
+}
+
 .footer {
   display: flex;
   padding-top: 1rem;
