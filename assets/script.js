@@ -23,7 +23,7 @@ function showContent() {
 // over it
 
 // unwelcome();
-if (window.location.pathname == '/index/') {
+if (welcome) {
     setTimeout(unwelcome, 10000);
     setTimeout(showContent, 10010);
 }
