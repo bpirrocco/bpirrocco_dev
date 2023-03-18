@@ -538,9 +538,55 @@ a:active {
     }
 }
 
+// ******************
+// ERROR PAGE STYLING
+// ******************
+
+.error {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.four {
+    padding: 5rem;
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+    background-color: var(--secondary-color);
+}
+
+.four h1 {
+    color: black;
+}
+
+.errorInfo {
+    margin: 2rem 0rem;
+}
+
+.linkBox {
+    display: flex;
+    min-width: 30vw;
+    justify-content: space-between;
+}
+
+.linkBox a{
+    color: white;
+    text-decoration: none;
+    font-size: 2.5rem;
+}
+
+.linkBox a:hover {
+    color: #18FFFF;
+}
+
+.linkBox a:active {
+    color: #003737;
+}
+
+
 // **************
 // FOOTER STYLING
 // **************
+
 
 .footer {
     display: flex;
