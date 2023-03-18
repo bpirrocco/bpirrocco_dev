@@ -447,17 +447,17 @@ a:active {
   text-align: left;
 }
 
-.textbox a {
+.darkA {
   font-size: 2.5rem;
   text-decoration: none;
   color: black;
 }
 
-.textbox a:hover {
+.darkA:hover {
   color: #18FFFF;
 }
 
-.textbox a:active {
+.darkA:active {
   color: #003737;
 }
 
