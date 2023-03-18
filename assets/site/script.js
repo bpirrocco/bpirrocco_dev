@@ -28,7 +28,7 @@ if (welcome) {
     setTimeout(showContent, 10010);
 }
 
-if (welcome !== null && headline) {
+if (welcome.length < 0 && headline) {
     setTimeout(showContent, 200);
 }
 
