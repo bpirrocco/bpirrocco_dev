@@ -28,6 +28,10 @@ if (welcome) {
     setTimeout(showContent, 10010);
 }
 
+if (welcome !== null && headline) {
+    setTimeout(showContent, 200);
+}
+
 // ********************
 // ABOUT PAGE SCRIPTING
 // ********************
