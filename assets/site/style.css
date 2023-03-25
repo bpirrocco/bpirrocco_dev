@@ -106,27 +106,27 @@ header nav li a {
   height: var(--length);
   width: var(--length);
   border-radius: var(--length);
-  animation: bounce var(--duration) 1 both var(--cb), fade 2s ease 7.5s reverse 1 forwards;
+  animation: bounce var(--duration) 1 both var(--cb), fade 2s ease 5.5s reverse 1 forwards;
 }
 
 .W {
   --bounce-offset: -295px;
   --length: 14rem;
-  --duration: 5s;
+  --duration: 3s;
   --cb: cubic-bezier(.2, .65, .6, 1);
 }
 
-.E, .C {
+.blueBounce {
   --bounce-offset: -300px;
   --length: 8rem;
   background-color: #18FFFF;
   padding-right: 0.3rem;
   padding-bottom: 0.5rem;
-  animation: bounce2 var(--duration) 1 both cubic-bezier(0.3, 0.65, 0.9, 1), fade 2s ease 7.5s reverse 1 forwards;
+  animation: bounce2 var(--duration) 1 both cubic-bezier(0.3, 0.65, 0.9, 1), fade 2s ease 5.5s reverse 1 forwards;
 }
 
 .E {
-  --duration: 4s;
+  --duration: 3.5s;
 }
 
 .L, .M {
@@ -136,16 +136,16 @@ header nav li a {
 }
 
 .L {
-  --duration: 4s;
+  --duration: 3.5s;
   --cb: cubic-bezier(.2, .65, .6, 1);
 }
 
 .C {
-  --duration: 5s;
+  --duration: 4s;
 }
 
 .M {
-  --duration: 4.2s;
+  --duration: 3.7s;
   --cb: cubic-bezier(.2, 1.2, .6, 1);
   padding-left: 0.2rem;
   padding-bottom: 0.3rem;
@@ -164,7 +164,7 @@ header nav li a {
 }
 
 .E2 {
-  --duration: 5s;
+  --duration: 4s;
   --cb: cubic-bezier(.2, .65, .2, 1);
 }
 
@@ -190,7 +190,7 @@ header nav li a {
     transform: translateY(0px);
   }
   50% {
-    transform: translateY(-510px);
+    transform: translateY(var(--navbar-comp));
   }
   100% {
     transform: translateY(var(--bounce-offset));
@@ -201,7 +201,7 @@ header nav li a {
     transform: translateY(0px);
   }
   50% {
-    transform: translateY(-510px);
+    transform: translateY(var(--navbar-comp));
   }
   100% {
     transform: translateY(var(--bounce-offset));
@@ -302,7 +302,7 @@ p {
 
 .inlinea {
   font-size: 2.5rem;
-  color: white;
+  color: var(--secondary-color);
   text-decoration: none;
 }
 
@@ -319,11 +319,11 @@ p {
 }
 
 a:hover {
-  color: #18FFFF;
+  color: var(--secondary-color);
 }
 
 a:active {
-  color: #003737;
+  color: var(--secondary-dark);
 }
 
 .about {

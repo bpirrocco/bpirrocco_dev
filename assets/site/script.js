@@ -2,6 +2,30 @@
 // HOMEPAGE SCRIPTING
 // ******************
 
+function getContentHeight() {
+    const content = document.getElementById("content");
+    return content.offsetHeight;   
+}
+
+function getNavHeight() {
+    const navbar = document.getElementById("navbar");
+    return navbar.offsetHeight;
+}
+
+function setNavbarComp() {
+    const blue = document.querySelector(".blueBounce");
+    blueStyle = getComputedStyle(blue);
+    blueRadius = (blue.offsetHeight) / 2;
+    contentHeight = Number(getContentHeight());
+    navbarHeight = Number(getNavHeight());
+    navbarComp = contentHeight - navbarHeight - blueRadius;
+    navbarComp = `${-navbarComp}px`;
+    const blueList = document.querySelectorAll(".blueBounce")
+    // blue.style.setProperty('--navbar-comp', navbarComp);
+    for(i=0; i<blueList.length; i++) {
+      blueList[i].style.setProperty('--navbar-comp', navbarComp);
+    }
+}
 
 function unwelcome() {
     const welcome = document.getElementsByClassName("testdiv");
@@ -46,8 +70,8 @@ function checkCookie() {
         unwelcome();
         setTimeout(showContent, 200);
     } else {
-        setTimeout(unwelcome, 10000);
-        setTimeout(showContent, 10010);
+        setTimeout(unwelcome, 7500);
+        setTimeout(showContent, 7510);
         setCookie("welcome", true, 1);
     }
   }
