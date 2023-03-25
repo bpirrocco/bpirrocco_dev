@@ -2,6 +2,9 @@
 // HOMEPAGE SCRIPTING
 // ******************
 
+// TODO: Now that I know how to do it, I should programmatically set
+//       the bounce heights and final heights for all of the welcome divs
+
 function getContentHeight() {
     const content = document.getElementById("content");
     return content.offsetHeight;   
