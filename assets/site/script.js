@@ -2,30 +2,20 @@
 // HOMEPAGE SCRIPTING
 // ******************
 
-const welcome = document.getElementsByClassName("testdiv");
-const headline = document.getElementById("headline");
-const textbar = document.getElementById("textbar");
 
 function unwelcome() {
+    const welcome = document.getElementsByClassName("testdiv");
     Array.from(welcome).forEach((el) =>
         el.style.display = 'none'
     );
 }
 
 function showContent() {
+    const headline = document.getElementById("headline");
+    const textbar = document.getElementById("textbar");
     textbar.style.display = 'flex';
     headline.style.display = 'flex';
 }
-
-// unwelcome();
-// if (welcome) {
-//     setTimeout(unwelcome, 10000);
-//     setTimeout(showContent, 10010);
-// }
-
-// if (welcome.length < 1 && headline) {
-//     setTimeout(showContent, 200);
-// }
 
 function setCookie(cname, cvalue, exdays) {
     const d = new Date();
@@ -72,7 +62,7 @@ contact.addEventListener("mouseenter", (event) => {
     contactInfo.classList.remove("hidden");
     if (contactInfo.classList.contains("disappear")){
         contactInfo.classList.replace("disappear", "reveal");
-    }else {
+    } else {
         contactInfo.classList.add("reveal");
     }
     
@@ -94,5 +84,4 @@ function showContact() {
 
 function addHidden(el) {
     el.classList.add("hidden");
-    // setTimeout(addHidden, 2000);
 }
