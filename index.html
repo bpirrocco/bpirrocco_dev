@@ -10,12 +10,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,400;0,600;1,400;1,900&display=swap" rel="stylesheet">
 </head>
-<body>
+<body onload="checkCookie()">
     <div class="box">
         <header>
             <div class="container">
                 <div class="logo">
-                    <a href="home.html">bpirrocco<span class="dot">.</span>dev</a>
+                    <a href="index.html">bpirrocco<span class="dot">.</span>dev</a>
                 </div>
                 <nav>
                     <ul class="nav">
@@ -27,9 +27,6 @@
             </div>
         </header>
         <div class="content">
-            <!-- I want to make a set of divs that bounces once to the
-                 middle of the page and reveals "Welcome". Each div should 
-                 be a different size, depending on the size of the letter. -->
             <div class="testdiv W" id="welcome">
                 <span class="welcometext big">W</span>
             </div>
@@ -52,13 +49,13 @@
                 <span class="welcometext small">e</span>
             </div>
             <div class="headline" id="headline">
-                <h2>This <br> <span class="is">is</span></h2>
+                <h2>Welcome <br> <span class="is">to</span></h2>
                 <h1>bpirrocco<span class="dot">.</span>dev</h1>
             </div>
             <div class="textbar" id="textbar">
                 <div class="textbox">
                     <p class="homep">
-                        Homepage for me, <a href="about.html" class="inlinea">Brandon Pirrocco</a>,
+                        Homepage for me, <a href="about.html" class="inlinea">Brandon Pirrocco</a>, a
                         full-stack developer. Please feel free to look around the site and check out some
                         of my <a href="portfolio.html" class="inlinea">projects</a>.
                     </p>

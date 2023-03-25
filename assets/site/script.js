@@ -10,8 +10,6 @@ function unwelcome() {
     Array.from(welcome).forEach((el) =>
         el.style.display = 'none'
     );
-    
-    // welcome.style.display = 'none';
 }
 
 function showContent() {
@@ -19,18 +17,50 @@ function showContent() {
     headline.style.display = 'flex';
 }
 
-// TODO: I need to turn this HTMLCollection object into an array, so I can iterate
-// over it
-
 // unwelcome();
-if (welcome) {
-    setTimeout(unwelcome, 10000);
-    setTimeout(showContent, 10010);
+// if (welcome) {
+//     setTimeout(unwelcome, 10000);
+//     setTimeout(showContent, 10010);
+// }
+
+// if (welcome.length < 1 && headline) {
+//     setTimeout(showContent, 200);
+// }
+
+function setCookie(cname, cvalue, exdays) {
+    const d = new Date();
+    d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
+    let expires = "expires="+ d.toUTCString();
+    document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
 }
 
-if (welcome.length < 1 && headline) {
-    setTimeout(showContent, 200);
+function getCookie(cname) {
+    let name = cname + "=";
+    let decodedCookie = decodeURIComponent(document.cookie);
+    let ca = decodedCookie.split(';');
+    for(let i = 0; i <ca.length; i++) {
+        let c = ca[i];
+        while (c.charAt(0) == ' ') {
+        c = c.substring(1);
+        }
+        if (c.indexOf(name) == 0) {
+        return c.substring(name.length, c.length);
+        }
+    }
+    return "";
 }
+
+function checkCookie() {
+    let welcome = getCookie("welcome");
+    if (welcome != "") {
+        unwelcome();
+        setTimeout(showContent, 200);
+    } else {
+        setTimeout(unwelcome, 10000);
+        setTimeout(showContent, 10010);
+        setCookie("welcome", true, 1);
+    }
+  }
 
 // ********************
 // ABOUT PAGE SCRIPTING
@@ -47,12 +77,6 @@ contact.addEventListener("mouseenter", (event) => {
     }
     
 });
-
-// contact.addEventListener("mouseleave", (event) => {
-//     const contactInfo = document.getElementById("contactInfo");
-//     contactInfo.classList.replace("reveal", "disappear");
-//     addHidden(contactInfo);
-// })
 
 contact.addEventListener("mouseleave", (event) => {
     const contactInfo = document.getElementById("contactInfo");
