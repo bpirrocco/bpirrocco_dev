@@ -17,11 +17,10 @@ function getNavHeight() {
 
 function setNavbarComp() {
     const blue = document.querySelector(".blueBounce");
-    blueStyle = getComputedStyle(blue);
-    blueRadius = (blue.offsetHeight) / 2;
-    contentHeight = Number(getContentHeight());
-    navbarHeight = Number(getNavHeight());
-    navbarComp = contentHeight - navbarHeight - blueRadius;
+    const blueRadius = (blue.offsetHeight) / 2;
+    const contentHeight = Number(getContentHeight());
+    const navbarHeight = Number(getNavHeight());
+    let navbarComp = contentHeight - navbarHeight - blueRadius;
     navbarComp = `${-navbarComp}px`;
     const blueList = document.querySelectorAll(".blueBounce")
     for(i=0; i<blueList.length; i++) {
@@ -54,7 +53,7 @@ function getCookie(cname) {
     let name = cname + "=";
     let decodedCookie = decodeURIComponent(document.cookie);
     let ca = decodedCookie.split(';');
-    for(let i = 0; i <ca.length; i++) {
+    for(let i = 0; i < ca.length; i++) {
         let c = ca[i];
         while (c.charAt(0) == ' ') {
         c = c.substring(1);
@@ -113,12 +112,43 @@ function addHidden(el) {
 }
 
 function setWrapperDim() {
-    wrapper = document.querySelector(".wrapper");
-    textBox = document.querySelector(".textBox");
+    const wrapper = document.querySelector(".wrapper");
+    const textBox = document.querySelector(".textBox");
     // textBoxHeight = textBox.offsetHeight;
-    textBoxWidth = textBox.clientWidth;
+    let textBoxWidth = textBox.clientWidth;
     // textBoxHeight = `${textBoxHeight}px`;
     textBoxWidth = `${textBoxWidth}px`;
     // wrapper.style.setProperty("--height", textBoxHeight);
     wrapper.style.setProperty("--width", textBoxWidth);
 }
+
+
+// *******************
+// PORTFOLIO SCRIPTING
+// *******************
+
+
+// function setCardDim() {
+//     setCardHeight();
+//     setCardWidth();
+// }
+
+// function setCardHeight() {
+//     const box = document.querySelector(".cardBox");
+//     const cards = document.querySelectorAll(".pCard");
+//     let boxHeight = box.clientHeight;
+//     boxHeight = `${boxHeight}px`;
+//     for (let i = 0; i <cards.length; i++) {
+//         cards[i].style.setProperty("--height", boxHeight);
+//     };
+// }
+
+// function setCardWidth() {
+//     const box = document.querySelector(".cardBox");
+//     const cards = document.querySelectorAll(".third");
+//     let boxWidth = (box.clientWidth) / 3;
+//     boxWidth = `${boxWidth}px`;
+//     for (let i = 0; i < cards.length; i++) {
+//         cards[i].style.setProperty("--width", boxWidth);
+//     };
+// }
