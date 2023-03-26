@@ -24,7 +24,6 @@ function setNavbarComp() {
     navbarComp = contentHeight - navbarHeight - blueRadius;
     navbarComp = `${-navbarComp}px`;
     const blueList = document.querySelectorAll(".blueBounce")
-    // blue.style.setProperty('--navbar-comp', navbarComp);
     for(i=0; i<blueList.length; i++) {
       blueList[i].style.setProperty('--navbar-comp', navbarComp);
     }

@@ -331,20 +331,26 @@ a:active {
   flex-direction: row;
 }
 
-.halfpage {
+.halfpagev1 {
   min-width: 50%;
   min-height: 100%;
   display: flex;
 }
 
-.halfpage:not(:first-child) {
+.halfPage {
+  min-width: 50%;
+  min-height: 100%;
+  display: flex;
+}
+
+.halfpagev1:not(:first-child) {
   flex-direction: column-reverse;
 }
 
 .secsquare {
   width: 55%;
   max-height: 40vh;
-  background-color: var(--secondary-color);
+  background-color: var(--primary-color);
   display: flex;
   flex-direction: column-reverse;
 }
@@ -352,6 +358,25 @@ a:active {
 .secsquare div {
   padding-left: 1rem;
   line-height: 6rem;
+}
+
+.titleBox {
+  max-height: 40vh;
+  width: 42%;
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.aboutTitle {
+  border-style: none solid solid none;
+  border-color: var(--secondary-color);
+  border-width: 1px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  line-height: 6rem;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 
 .redsquare {
