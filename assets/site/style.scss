@@ -321,7 +321,7 @@ p {
     padding: 0.5rem;
 }
 
-.inlinea {
+a {
     font-size: 2.5rem;
     color: var(--secondary-color);
     text-decoration: none;
@@ -357,37 +357,23 @@ a:active {
     flex-direction: row;
 }
 
-.halfpagev1 {
-    min-width: 50%;
+.thirdPage {
+    min-width: 33%;
     min-height: 100%;
     display: flex;
 }
 
-.halfPage {
-    min-width: 50%;
+.twoThirdPage {
+    min-width: 66%;
     min-height: 100%;
     display: flex;
-}
-
-.halfpagev1:not(:first-child) {
-    flex-direction: column-reverse;
-}
-
-.secsquare {
-    width: 55%;
-    max-height: 40vh;
-    background-color: var(--primary-color);
-    display: flex;
-    flex-direction: column-reverse;
-}
-
-.secsquare div {
-    padding-left: 1rem;
-    line-height: 6rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .titleBox {
-    max-height: 40vh;
+    max-height: 33vh;
     width: 42%;
     display: flex;
     flex-direction: column-reverse;
@@ -397,122 +383,53 @@ a:active {
     border-style: none solid solid none;
     border-color: var(--secondary-color);
     border-width: 1px;
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding: 1rem;
     line-height: 6rem;
     width: fit-content;
 }
 
-.redsquare {
-    display: flex;
-    background-color: #FF1744;
-    width: 150vw;
-    height: 45vh;
+.accent {
+    width: var(--width);
+    height: var(--height);
+    background-color: var(--secondary-color);
+    position: absolute;
+    z-index: 1;
+    bottom: 26rem;
 }
 
-.redsquare div {
-    padding: 1rem 0.5rem 0.5rem 2rem;
-    max-width: 30%;
+.textBox {
+    background-color: var(--primary-dark);
+    margin-left: 5rem;
+    margin-right: 5rem;
+    padding: 1rem;
+    position: relative;
+    z-index: 2;
+    border-style: solid none none solid;
+    border-color: var(--secondary-color);
+    border-width: 1px;
 }
 
-.redsquare p {
-    margin-bottom: 5rem;
+h3 {
+    color: white;
+    font-size: 3rem;
 }
 
 .contact {
-    position: absolute;
-    left: 20%;
-    top: 60%;
-    width: 28rem;
-    height: 3rem;
-    padding: 1rem;
-    background-color: #18FFFF;
-    align-items: center;
-    justify-content: center;
-    transition: height 5s ease;
+    border-style: none solid solid none;
+    border-color: var(--secondary-color);
+    border-width: 1px;
 }
 
-.contact:hover {
-    height: 20rem;
+.wrapper {
+    width: (var(--width));
+    height: (var(--height));
 }
 
-.contact p {
-    text-align: center;
-    font-size: 2rem;
-    margin-bottom: 2rem;
-}
-
-.contactinfo li {
-    list-style-type: none;
-    font-size: 1.8rem;
-    line-height: 2.5rem;
-    padding: 0.5rem;
-}
-
-.contactinfo li em {
-    font-size: 1.8rem;
-    padding-left: 0.2rem;
-}
-
-.contactinfo li a {
-    font-size: 1.8rem;
-    color: black;
-    text-decoration: none;
-    padding-left: 0.2rem;
-}
-
-.contactinfo li a:hover {
-    opacity: .33;
-}
-
-.reveal {
-    animation: 
-        fade 2s
-        ease-in
-        1 forwards;
-}
-
-.disappear {
-    animation:
-        fadeout 2s
-        ease-out
-        1 forwards;
-}
-
-@keyframes fadeout {
-    from {
-        opacity: 1;
-    }
-    to {
-        opacity: 0;
-    }
-}
-
-.textbox {
-    text-align: left;
-}
-
-.darkA {
-    font-size: 2.5rem;
-    text-decoration: none;
-    color: black;
-}
-
-.darkA:hover {
-    color: #18FFFF;
-}
-
-.darkA:active {
-    color: #003737;
-}
-
-.dark {
-    color: black;
-}
 
 // *****************
 // PORTFOLIO STYLING
 // *****************
+
 
 .third {
     width: 33.3%;
