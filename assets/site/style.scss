@@ -380,9 +380,12 @@ a:active {
 }
 
 .aboutTitle {
-    border-style: none solid solid none;
+    // border-style: none solid solid none;
+    // border-color: var(--secondary-color);
+    // border-width: 1px;
+    border-style: none none none solid;
     border-color: var(--secondary-color);
-    border-width: 1px;
+    border-width: 5px;
     padding: 1rem;
     line-height: 6rem;
     width: fit-content;
@@ -412,17 +415,44 @@ a:active {
 h3 {
     color: white;
     font-size: 3rem;
+    text-align: center;
+}
+
+li {
+    color: white;
+    list-style-type: none;
+}
+
+br {
+    line-height: 1rem;
 }
 
 .contact {
     border-style: none solid solid none;
     border-color: var(--secondary-color);
     border-width: 1px;
+    padding: 1rem;
 }
 
 .wrapper {
     width: (var(--width));
-    height: (var(--height));
+    display: flex;
+    flex-direction: row-reverse;
+    margin-top: 5rem;
+}
+
+em {
+    font-size: 2.5rem;
+    color: white;
+}
+
+.liTag {
+    padding-right: 1rem;
+    font-size: 2.5rem;
+}
+
+li a {
+    color: white;
 }
 
 

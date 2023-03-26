@@ -115,10 +115,10 @@ function addHidden(el) {
 function setWrapperDim() {
     wrapper = document.querySelector(".wrapper");
     textBox = document.querySelector(".textBox");
-    textBoxHeight = textBox.offsetHeight;
-    textBoxWidth = textBox.offsetWidth;
-    textBoxHeight = `${textBoxHeight}px`;
+    // textBoxHeight = textBox.offsetHeight;
+    textBoxWidth = textBox.clientWidth;
+    // textBoxHeight = `${textBoxHeight}px`;
     textBoxWidth = `${textBoxWidth}px`;
-    wrapper.style.setProperty("--height", textBoxHeight);
+    // wrapper.style.setProperty("--height", textBoxHeight);
     wrapper.style.setProperty("--width", textBoxWidth);
 }
