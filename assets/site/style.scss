@@ -108,7 +108,7 @@ header nav li a {
     justify-content: center;
     background-color: var(--primary-dark);
     flex: 1 1 auto;
-    overflow: hidden;
+    overflow: auto;
 }
 
 .testdiv {
@@ -369,7 +369,7 @@ a:active {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
 }
 
 .titleBox {
@@ -388,17 +388,7 @@ a:active {
     width: fit-content;
 }
 
-.accent {
-    width: var(--width);
-    height: var(--height);
-    background-color: var(--secondary-color);
-    position: absolute;
-    z-index: 1;
-    bottom: 26rem;
-}
-
 .textBox {
-    background-color: var(--primary-dark);
     margin-left: 5rem;
     margin-right: 1rem;
     padding: 1rem 1rem 1rem 7rem;
@@ -435,11 +425,43 @@ br {
     width: (var(--width));
     display: flex;
     flex-direction: row;
-    margin-bottom: 5rem;
+    // margin-bottom: 5rem;
+}
+
+@media only screen and (max-width: 1150px) {
+    .thirdPage {
+        flex-direction: column;
+    }
+
+    .twoThirdPage {
+        flex-direction: column-reverse;
+        justify-content: end;
+    }
+
+    .titleBox {
+        min-height: 33vh;
+    }
+
+    .wrapper {
+        margin-top: 5rem;
+        margin-bottom: 0rem;
+        max-width: fit-content;
+    }
+
+    .contact {
+        border-style: none none none solid;
+        border-color: var(--secondary-color);
+        border-width: 5px;
+        margin-bottom: 1.7rem;
+    }
+
+    .textBox {
+        margin-bottom: 1.7rem;
+    }
 }
 
 em {
-    font-size: 2.5rem;
+    font-size: 1.8rem;
     color: white;
 }
 
@@ -450,6 +472,7 @@ em {
 
 li a {
     color: white;
+    font-size: 1.8rem;
 }
 
 

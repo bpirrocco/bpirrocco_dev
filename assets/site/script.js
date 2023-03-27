@@ -77,7 +77,7 @@ function checkCookie() {
     }
   }
 
-  
+
 // ********************
 // ABOUT PAGE SCRIPTING
 // ********************
@@ -92,6 +92,19 @@ function setWrapperDim() {
     textBoxWidth = `${textBoxWidth}px`;
     // wrapper.style.setProperty("--height", textBoxHeight);
     wrapper.style.setProperty("--width", textBoxWidth);
+}
+
+function moveContact() {
+    if (window.innerWidth <= 1150) {
+        document.getElementById("thirdPage").appendChild(document.getElementById("wrapper"));
+    };
+}
+
+function removeContact() {
+    const div = document.getElementById("twoThirdPage");
+    if (window.innerWidth > 1150) {
+        div.insertBefore(document.getElementById("wrapper"), div.firstChild);
+    }
 }
 
 

@@ -17,7 +17,7 @@
     <meta name="msapplication-TileColor" content="#ffb300">
     <meta name="theme-color" content="#ffffff">
 </head>
-<body onload="setWrapperDim()" onresize="setWrapperDim()">
+<body onload="setWrapperDim(), moveContact(), removeContact()" onresize="setWrapperDim(), moveContact(), removeContact()">
     <div class="box">
         <header>
             <div class="container">
@@ -34,15 +34,15 @@
             </div>
         </header>
         <div class="about content">
-            <div class="thirdPage">
+            <div class="thirdPage" id="thirdPage">
                 <div class="titleBox">
                     <div class="aboutTitle">
                         <h1 class="">About Brandon</h1>
                     </div>
                 </div>
             </div>
-            <div class="twoThirdPage">
-                    <div class="wrapper">
+            <div class="twoThirdPage" id="twoThirdPage">
+                    <div class="wrapper" id="wrapper">
                         <div class="contact">
                             <h3>Contact Info</h3>
                             <br><br>
