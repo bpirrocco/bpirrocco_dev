@@ -77,39 +77,11 @@ function checkCookie() {
     }
   }
 
+  
 // ********************
 // ABOUT PAGE SCRIPTING
 // ********************
 
-const contact = document.getElementById("contact");
-contact.addEventListener("mouseenter", (event) => {
-    const contactInfo = document.getElementById("contactInfo");
-    contactInfo.classList.remove("hidden");
-    if (contactInfo.classList.contains("disappear")){
-        contactInfo.classList.replace("disappear", "reveal");
-    } else {
-        contactInfo.classList.add("reveal");
-    }
-    
-});
-
-contact.addEventListener("mouseleave", (event) => {
-    const contactInfo = document.getElementById("contactInfo");
-    contactInfo.classList.replace("reveal", "disappear");
-
-    setTimeout(function() {
-        contactInfo.classList.add("hidden");
-    }, 5000);
-})
-
-function showContact() {
-    contact.classList.remove("hidden");
-    contact.classList.add("reveal");
-}
-
-function addHidden(el) {
-    el.classList.add("hidden");
-}
 
 function setWrapperDim() {
     const wrapper = document.querySelector(".wrapper");
