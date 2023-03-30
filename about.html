@@ -17,10 +17,10 @@
     <meta name="msapplication-TileColor" content="#ffb300">
     <meta name="theme-color" content="#ffffff">
 </head>
-<body onload="setWrapperDim(), moveContact(), removeContact()" onresize="setWrapperDim(), moveContact(), removeContact()">
+<body onload="setWrapperDim(), moveContact(), removeContact(), moveAbout(), removeAbout()" onresize="setWrapperDim(), moveContact(), removeContact(), moveAbout(), removeAbout()">
     <div class="box">
         <header>
-            <div class="container">
+            <div class="container" id="navbar">
                 <div class="logo">
                     <a href="index.html">bpirrocco<span class="dot">.</span>dev</a>
                 </div>
@@ -42,41 +42,41 @@
                 </div>
             </div>
             <div class="twoThirdPage" id="twoThirdPage">
-                    <div class="wrapper" id="wrapper">
-                        <div class="contact">
-                            <h3>Contact Info</h3>
-                            <br><br>
-                            <ul>
-                                <li><span class="liTag">Phone:</span>
-                                    <em>Available upon request</em>
-                                </li>
-                                <li>
-                                    <span class="liTag">Email:</span>
-                                    <a href="mailto:bpirrocco@gmail.com">bpirrocco@gmail.com</a>
-                                </li>
-                                <li>
-                                    <span class="liTag">GitHub:</span>
-                                    <a href="https://github.com/bpirrocco" target="_blank">GitHub.com/bpirrocco</a>
-                                </li>
-                                <li>
-                                    <span class="liTag">LinkedIn:</span>
-                                    <a href="https://www.linkedin.com/in/brandon-pirrocco-800137238" target="_blank">
-                                    linkedin.com/bpirrocco</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div><!-- wrapper -->
-                    <div class="textBox">
-                        <p class="">I specialize in developing responsive web apps in pure
-                            HTML, CSS, and Javascript, Django, React, PHP, and Flutter. I'm 
-                            well-versed in Python, experimenting with AI/ML using libraries like 
-                            TensorFlow and PyTorch. I'm also familiar with frameworks and libraries like 
-                            Node.js, Express, pandas, NumPy, Twig, and jQuery. My projects have been
-                            developed using Figma, VSCode, Git, Docker, and Kubernetes, and they are all 
-                            hosted on the AWS Cloud.
-                        </p>
+                <div class="wrapper" id="wrapper">
+                    <div class="contact">
+                        <h3>Contact Info</h3>
                         <br><br>
-                        <p class="">Please view my <a href="resume.html" class="darkA">resume</a> for more details.</p>
+                        <ul>
+                            <li><span class="liTag">Phone:</span>
+                                <em>Available upon request</em>
+                            </li>
+                            <li>
+                                <span class="liTag">Email:</span>
+                                <a href="mailto:bpirrocco@gmail.com">bpirrocco@gmail.com</a>
+                            </li>
+                            <li>
+                                <span class="liTag">GitHub:</span>
+                                <a href="https://github.com/bpirrocco" target="_blank">GitHub.com/bpirrocco</a>
+                            </li>
+                            <li>
+                                <span class="liTag">LinkedIn:</span>
+                                <a href="https://www.linkedin.com/in/brandon-pirrocco-800137238" target="_blank">
+                                linkedin.com/bpirrocco</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div><!-- wrapper -->
+                <div class="textBox" id="textBox">
+                    <p>I specialize in developing responsive web apps in pure
+                        HTML, CSS, and Javascript, Django, React, PHP, and Flutter. I'm 
+                        well-versed in Python, experimenting with AI/ML using libraries like 
+                        TensorFlow and PyTorch. I'm also familiar with frameworks and libraries like 
+                        Node.js, Express, pandas, NumPy, Twig, and jQuery. My projects have been
+                        developed using Figma, VSCode, Git, Docker, and Kubernetes, and they are all 
+                        hosted on the AWS Cloud.
+                    </p>
+                    <br><br>
+                    <p>Please view my <a href="resume.html" class="darkA">resume</a> for more details.</p>
                 </div>
             </div>
         </div>

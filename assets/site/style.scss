@@ -392,7 +392,6 @@ a:active {
     margin-right: 1rem;
     padding: 1rem 1rem 1rem 7rem;
     position: relative;
-    z-index: 2;
     border-style: none solid solid none;
     border-color: var(--secondary-color);
     border-width: 1px;
@@ -456,6 +455,43 @@ br {
 
     .textBox {
         margin-bottom: 1.7rem;
+    }
+}
+
+@media only screen and (max-width: 715px) {
+    body {
+       height: 150vh;
+       overflow: auto;
+    }
+
+    .twoThirdPage {
+        display: none;
+    }
+
+    .thirdPage {
+        min-width: 100%;
+    }
+
+    .textBox {
+        // position: static;
+        margin-left: 3rem;
+        padding-left: 2rem;
+    }
+
+    .titleBox {
+        max-height: 13vh;
+    }
+}
+
+@media only screen and (max-width: 515px) {
+    .titleBox {
+        position: relative;
+        top: 9rem;
+    }
+
+    .wrapper {
+        position: relative;
+        // top: 15rem;
     }
 }
 

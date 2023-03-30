@@ -100,10 +100,23 @@ function moveContact() {
     };
 }
 
+function moveAbout() {
+    if (window.innerWidth <= 715) {
+        document.getElementById("thirdPage").appendChild(document.
+        getElementById("textBox"));
+    }
+}
+
 function removeContact() {
     const div = document.getElementById("twoThirdPage");
     if (window.innerWidth > 1150) {
         div.insertBefore(document.getElementById("wrapper"), div.firstChild);
+    }
+}
+
+function removeAbout() {
+    if (window.innerWidth > 715) {
+        document.getElementById("twoThirdPage").appendChild(document.getElementById("textBox"));
     }
 }
 
