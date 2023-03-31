@@ -460,7 +460,7 @@ br {
 
 @media only screen and (max-width: 715px) {
     body {
-       height: 150vh;
+       height: 200vh;
        overflow: auto;
     }
 
@@ -485,13 +485,11 @@ br {
 
 @media only screen and (max-width: 515px) {
     .titleBox {
-        position: relative;
-        top: 9rem;
+        flex-grow: 5
     }
 
     .wrapper {
-        position: relative;
-        // top: 15rem;
+        flex-grow: 5;
     }
 }
 

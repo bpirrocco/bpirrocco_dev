@@ -120,6 +120,10 @@ function removeAbout() {
     }
 }
 
+function refreshFix() {
+    window.addEventListener("DOMContentLoaded", (event))
+}
+
 
 // *******************
 // PORTFOLIO SCRIPTING
