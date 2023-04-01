@@ -25,7 +25,7 @@ jobs:
         aws-region: ${{ env.AWS_DEFAULT_REGION }}
 
     - name: Checkout
-      uses: actions/checkout@v2
+      uses: actions/checkout@v3
 
     - name: Deploy static site to S3 bucket
       run: aws s3 sync ./public/ s3://arn:aws:s3:::bpirrocco.dev --delete
