@@ -5,6 +5,10 @@ on:
     branches:
     - main
 
+  permissions:
+    id-token: write
+    contents: read# This is required for actions/checkout@v2
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
@@ -12,8 +16,6 @@ jobs:
     env:
       AWS_DEFAULT_REGION: us-east-1
     steps:
-    - name: Checkout
-      uses: actions/checkout@v1
 
     - name: Configure AWS Credentials
       uses: aws-actions/configure-aws-credentials@v1
@@ -21,6 +23,9 @@ jobs:
         role-to-assume: ${{ secrets.S3_ACCESS_ARN }}
         role-session-name: websitedeploy
         aws-region: ${{ env.AWS_DEFAULT_REGION }}
+
+    - name: Checkout
+      uses: actions/checkout@v2
 
     - name: Deploy static site to S3 bucket
       run: aws s3 sync ./public/ s3://arn:aws:s3:::bpirrocco.dev --delete
