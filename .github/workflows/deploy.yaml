@@ -8,6 +8,9 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
+
+    env:
+      AWS_DEFAULT_REGION: us-east-1
     steps:
     - name: Checkout
       uses: actions/checkout@v1
@@ -15,9 +18,9 @@ jobs:
     - name: Configure AWS Credentials
       uses: aws-actions/configure-aws-credentials@v1
       with:
-        aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
-        aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-        aws-region: ap-southeast-1
+        role-to-assume: ${{ secrets.S3_ACCESS_ARN }}
+        role-session-name: websitedeploy
+        aws-region: ${{ env.AWS_DEFAULT_REGION }}
 
     - name: Deploy static site to S3 bucket
-      run: aws s3 sync ./public/ s3://BUCKET_NAME --delete
+      run: aws s3 sync ./public/ s3://arn:aws:s3:::bpirrocco.dev --delete
