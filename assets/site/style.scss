@@ -423,7 +423,6 @@ br {
     width: (var(--width));
     display: flex;
     flex-direction: row;
-    // margin-bottom: 5rem;
 }
 
 @media only screen and (max-width: 1150px) {
@@ -443,7 +442,7 @@ br {
     .wrapper {
         margin-top: 5rem;
         margin-bottom: 0rem;
-        max-width: fit-content;
+        width: 90vw;
     }
 
     .contact {
@@ -460,7 +459,7 @@ br {
 
 @media only screen and (max-width: 715px) {
     body {
-       height: 200vh;
+       height: 175vh;
        overflow: auto;
     }
 
@@ -473,23 +472,12 @@ br {
     }
 
     .textBox {
-        // position: static;
         margin-left: 3rem;
         padding-left: 2rem;
     }
 
     .titleBox {
         max-height: 13vh;
-    }
-}
-
-@media only screen and (max-width: 515px) {
-    .titleBox {
-        flex-grow: 5
-    }
-
-    .wrapper {
-        flex-grow: 5;
     }
 }
 

@@ -416,9 +416,7 @@ br {
   .wrapper {
     margin-top: 5rem;
     margin-bottom: 0rem;
-    max-width: -webkit-fit-content;
-    max-width: -moz-fit-content;
-    max-width: fit-content;
+    width: 90vw;
   }
   .contact {
     border-style: none none none solid;
@@ -432,7 +430,7 @@ br {
 }
 @media only screen and (max-width: 715px) {
   body {
-    height: 150vh;
+    height: 175vh;
     overflow: auto;
   }
   .twoThirdPage {
@@ -447,15 +445,6 @@ br {
   }
   .titleBox {
     max-height: 13vh;
-  }
-}
-@media only screen and (max-width: 515px) {
-  .titleBox {
-    position: relative;
-    top: 9rem;
-  }
-  .wrapper {
-    position: relative;
   }
 }
 em {
