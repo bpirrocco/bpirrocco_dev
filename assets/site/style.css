@@ -489,24 +489,31 @@ li a {
   align-items: center;
 }
 
-.third {
-  min-width: 33vw;
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex: 1 1 auto;
+.third:first-child {
+  margin-left: 2rem;
+}
+
+.third:last-child {
+  margin-right: 1.5rem;
 }
 
 .pCard {
   display: flex;
   height: 65vh;
-  max-width: 70%;
+  min-width: 30vw;
+  margin: 2rem;
   background-color: var(--primary-light);
-  box-shadow: -1.5rem -1.5rem 0 0 var(--primary-color);
   padding: 1rem;
-  -webkit-animation: slideIn 3s ease 1 forwards;
-          animation: slideIn 3s ease 1 forwards;
+  overflow-y: scroll;
+  scrollbar-width: none;
+  transition-property: transform, box-shadow;
+  transition-duration: 0.2s;
+  transition-timing-function: linear;
+}
+
+.pCard:hover {
+  transform: translate(-1rem, -1rem);
+  box-shadow: 1.5rem 1.5rem 0 0 var(--primary-color);
 }
 
 @-webkit-keyframes slideIn {
@@ -524,6 +531,34 @@ li a {
   }
   to {
     transform: translateX(0px);
+  }
+}
+@media only screen and (max-width: 1135px) {
+  .pCard {
+    min-width: 340px;
+    max-width: 340px;
+  }
+}
+@media only screen and (max-width: 720px) {
+  .pBody {
+    max-height: 100vh;
+  }
+  .cardBox {
+    overflow-y: scroll;
+  }
+  .cardWrapper {
+    margin-top: var(--margin);
+    max-height: 100vh;
+    flex-direction: column;
+    justify-content: flex-start;
+    overflow-y: scroll;
+    scrollbar-width: none;
+  }
+  .third:first-child {
+    margin-left: 0rem;
+  }
+  .third:last-child {
+    margin-right: 0rem;
   }
 }
 .error {

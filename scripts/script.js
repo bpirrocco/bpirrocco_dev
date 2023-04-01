@@ -142,6 +142,14 @@ function refreshFix() {
 // PORTFOLIO SCRIPTING
 // *******************
 
+function setPortfolioMargin() {
+    const cardWrapper = document.getElementById("cardWrapper");
+    const navbarHeight = getNavHeight();
+    let margin = navbarHeight + 100;
+    margin = `${margin}px`
+    cardWrapper.style.setProperty("--margin", margin);
+    return margin
+}
 
 // function setCardDim() {
 //     setCardHeight();
@@ -159,9 +167,9 @@ function refreshFix() {
 // }
 
 // function setCardWidth() {
-//     const box = document.querySelector(".cardBox");
-//     const cards = document.querySelectorAll(".third");
-//     let boxWidth = (box.clientWidth) / 3;
+//     const screen = window.innerWidth;
+//     const cards = document.querySelectorAll(".pCard");
+//     let cardWidth = screen; // cardWidth = x / screen
 //     boxWidth = `${boxWidth}px`;
 //     for (let i = 0; i < cards.length; i++) {
 //         cards[i].style.setProperty("--width", boxWidth);
