@@ -2,6 +2,19 @@
 // HOMEPAGE SCRIPTING
 // ******************
 
+
+// TODO 4/1: All mobile optimization for this site. All pages should be responsive.
+// Set up counter scripting on resume page
+// Set up CI/CD pipeline
+// Create parent model and child models for pycasts
+// Make user dashboard with tabs:
+//                                Favorites (default)
+//                                Podcasts
+//                                Youtube Content
+//                                Social Media
+// Play with Youtube API
+// Start React training
+
 // TODO: Now that I know how to do it, I should programmatically set
 //       the bounce heights and final heights for all of the welcome divs
 
