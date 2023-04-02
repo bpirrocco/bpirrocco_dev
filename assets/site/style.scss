@@ -479,7 +479,7 @@ br {
 
 @media only screen and (max-width: 715px) {
     body {
-       height: 200vh;
+       height: 185vh;
        overflow: auto;
     }
 
@@ -493,13 +493,15 @@ br {
     }
 
     .textBox {
+        margin-top: 6rem;
         margin-left: 3rem;
         padding-left: 2rem;
     }
 
-    .titleBox {
-        max-height: 13vh;
+    .contact {
+        margin-top: 1rem;
     }
+    
 }
 
 em {
