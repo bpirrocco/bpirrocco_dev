@@ -402,9 +402,6 @@ br {
     flex-direction: column-reverse;
     justify-content: end;
   }
-  .titleBox {
-    min-height: 33vh;
-  }
   .wrapper {
     margin-top: 5rem;
     margin-bottom: 0rem;
@@ -421,8 +418,8 @@ br {
   }
 }
 @media only screen and (max-width: 715px) {
-  body {
-    min-height: 500vh;
+  .aboutB {
+    min-height: 175vh;
     overflow: auto;
   }
   .twoThirdPage {
@@ -439,6 +436,15 @@ br {
   }
   .contact {
     margin-top: 1rem;
+  }
+  .titleBox {
+    margin-top: 5rem;
+    min-height: none;
+  }
+}
+@media only screen and (max-width: 520px) {
+  .aboutB {
+    min-height: 275vh;
   }
 }
 em {
