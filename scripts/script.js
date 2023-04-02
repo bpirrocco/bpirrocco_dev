@@ -5,7 +5,7 @@
 
 // TODO 4/1: All mobile optimization for this site. All pages should be responsive.
 // Set up counter scripting on resume page
-// Set up CI/CD pipeline
+// Set up CI/CD pipeline DONE
 // Create parent model and child models for pycasts
 // Make user dashboard with tabs:
 //                                Favorites (default)
