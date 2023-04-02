@@ -479,7 +479,7 @@ br {
 
 @media only screen and (max-width: 715px) {
     body {
-       height: 175vh;
+       height: 200vh;
        overflow: auto;
     }
 
@@ -489,6 +489,7 @@ br {
 
     .thirdPage {
         min-width: 100%;
+        justify-content: flex-end;
     }
 
     .textBox {
