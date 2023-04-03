@@ -109,4 +109,11 @@ em {
 
 b {
   font-size: 1.4rem;
+}
+
+#counter {
+  font-size: 1.4rem;
+  line-height: 1.6;
+  color: navy;
+  font-weight: bold;
 }/*# sourceMappingURL=style.css.map */
