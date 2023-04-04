@@ -663,6 +663,7 @@ li a {
 }
 
 .four {
+    margin-top: 5rem;
     padding: 5rem;
     clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
     background-color: var(--secondary-color);
@@ -672,20 +673,28 @@ li a {
     color: black;
 }
 
+.whoops {
+    text-align: center;
+    padding: 0rem 2rem;
+}
+
 .errorInfo {
-    margin: 2rem 0rem;
+    margin: 2rem 2rem;
+    text-align: center;
 }
 
 .linkBox {
     display: flex;
     min-width: 30vw;
     justify-content: space-between;
+    margin-bottom: 5rem;
 }
 
 .linkBox a{
     color: white;
     text-decoration: none;
     font-size: 2.5rem;
+    padding: 1rem;
 }
 
 .linkBox a:hover {
