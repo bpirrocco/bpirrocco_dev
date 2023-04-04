@@ -252,11 +252,11 @@ header nav li a {
         fade 3s
         ease
         1 forwards;
-    // justify-content: flex-start;
-    // flex-direction: column;
-    // min-height: 95%;
-    // min-width: 45%;
-    padding: 1rem;
+    justify-content: flex-start;
+    flex-direction: column;
+    min-height: 95%;
+    min-width: 45%;
+    padding: 1rem 1rem 1rem 5rem;
 }
 
 .textbar {
@@ -266,13 +266,13 @@ header nav li a {
         fade 3s
         ease
         1 forwards;
-    // min-height: 100%;
-    // min-width: 50%;
+    min-height: 100%;
+    min-width: 50%;
 }
 
-// .textbar .textbox {
-//     max-width: 80%;
-// }
+.textbar .textbox {
+    max-width: 80%;
+}
 
 // ************
 // TEXT STYLING
@@ -284,11 +284,11 @@ h1 {
     
 }
 
-// .headline h1 {
-//     // position: relative;
-//     // left: 18rem;
-//     // top: 3rem;
-// }
+.headline h1 {
+    position: relative;
+    left: 18rem;
+    top: 3rem;
+}
 
 h2 {
     color: white;
@@ -297,9 +297,9 @@ h2 {
 
 .to {
     font-size: 5rem;
-    // position: relative;
-    // left: 10rem;
-    // top: 1.5rem;
+    position: relative;
+    left: 10rem;
+    top: 1.5rem;
 }
 
 p {
@@ -310,8 +310,8 @@ p {
 
 
 .homep {
-    // position: relative;
-    // top: 34rem;
+    position: relative;
+    top: 34rem;
     border-style: none solid solid none;
     border-color: var(--secondary-color);
     border-width: 1px;
@@ -352,17 +352,8 @@ a:active {
 
 @media only screen and (max-width: 950px) {
 
-    .textbar .textbox {
-        min-width: none;
-        max-width: none;
-        margin-right: 10rem;
-    }
-
-    .index {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
+    .headline-mobile {
+        
     }
 }
 

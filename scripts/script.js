@@ -55,6 +55,19 @@ function showContent() {
     headline.style.display = 'flex';
 }
 
+function welcomeRespond() {
+    if (window.innerWidth <= 950) {
+        const headline = document.getElementById("headline");
+        const textbar = document.getElementById("textbar");
+        headline.setAttribute("class", "headline-mobile");
+        textbar.setAttribute("class", "textbar-mobile");
+    }
+}
+
+// **************
+// WELCOME COOKIE
+// **************
+
 function setCookie(cname, cvalue, exdays) {
     const d = new Date();
     d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
