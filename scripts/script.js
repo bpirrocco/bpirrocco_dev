@@ -55,14 +55,14 @@ function showContent() {
     headline.style.display = 'flex';
 }
 
-function welcomeRespond() {
-    if (window.innerWidth <= 950) {
-        const headline = document.getElementById("headline");
-        const textbar = document.getElementById("textbar");
-        headline.setAttribute("class", "headline-mobile");
-        textbar.setAttribute("class", "textbar-mobile");
-    }
-}
+// function welcomeRespond() {
+//     if (window.innerWidth <= 950) {
+//         const headline = document.getElementById("headline");
+//         const textbar = document.getElementById("textbar");
+//         headline.setAttribute("class", "headline-mobile");
+//         textbar.setAttribute("class", "textbar-mobile");
+//     }
+// }
 
 // **************
 // WELCOME COOKIE

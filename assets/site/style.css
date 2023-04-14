@@ -326,6 +326,31 @@ a:active {
   color: var(--secondary-dark);
 }
 
+@media only screen and (max-width: 950px) {
+  .headline {
+    position: static;
+  }
+  .headline h1 {
+    position: static;
+  }
+  .to {
+    position: static;
+  }
+  .homep {
+    position: static;
+  }
+  .textbox, .textbar, .headline {
+    min-width: auto;
+    min-height: auto;
+    max-height: auto;
+    max-width: auto;
+  }
+  .index {
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: flex-start;
+  }
+}
 .about {
   display: flex;
   flex-direction: row;
