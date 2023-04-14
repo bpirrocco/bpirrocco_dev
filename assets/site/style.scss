@@ -110,6 +110,13 @@ header nav li a {
     overflow: auto;
 }
 
+.index {
+    // overflow: hidden;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: flex-start;
+}
+
 .testdiv {
     display: flex;
     justify-content: center;
@@ -254,9 +261,9 @@ header nav li a {
         1 forwards;
     justify-content: flex-start;
     flex-direction: column;
-    min-height: 95%;
-    min-width: 45%;
-    padding: 1rem 1rem 1rem 5rem;
+    // min-height: 95%;
+    // min-width: 45%;
+    padding: 1rem 1rem 1rem 5%;
 }
 
 .textbar {
@@ -266,12 +273,13 @@ header nav li a {
         fade 3s
         ease
         1 forwards;
-    min-height: 100%;
-    min-width: 50%;
+    min-height: 50%;
+    // min-width: 50%;
 }
 
-.textbar .textbox {
-    max-width: 80%;
+.textbox {
+    display: flex;
+    flex-direction: column-reverse;
 }
 
 // ************
@@ -286,7 +294,7 @@ h1 {
 
 .headline h1 {
     position: relative;
-    left: 18rem;
+    left: 21%;
     top: 3rem;
 }
 
@@ -298,7 +306,7 @@ h2 {
 .to {
     font-size: 5rem;
     position: relative;
-    left: 10rem;
+    left: 11.5%;
     top: 1.5rem;
 }
 
@@ -311,7 +319,7 @@ p {
 
 .homep {
     position: relative;
-    top: 34rem;
+    // top: 10rem;
     border-style: none solid solid none;
     border-color: var(--secondary-color);
     border-width: 1px;
@@ -352,34 +360,26 @@ a:active {
 
 @media only screen and (max-width: 950px) {
 
-    .headline {
-        position: static;
-    }
+    // .headline {
+    //     position: static;
+    // }
 
-    .headline h1 {
-        position: static;
-    }
+    // .homep {
+    //     position: static;
+    // }
 
-    .to {
-        position: static;
-    }
+    // .textbox, .textbar, .headline {
+    //     min-width: auto;
+    //     min-height: auto;
+    //     max-height: auto;
+    //     max-width: auto;
+    // }
 
-    .homep {
-        position: static;
-    }
-
-    .textbox, .textbar, .headline {
-        min-width: auto;
-        min-height: auto;
-        max-height: auto;
-        max-width: auto;
-    }
-
-    .index {
-        flex-direction: column;
-        align-items: stretch;
-        justify-content: flex-start;
-    }
+    // .index {
+    //     flex-direction: column;
+    //     align-items: stretch;
+    //     justify-content: flex-start;
+    // }
 }
 
 // ******************
