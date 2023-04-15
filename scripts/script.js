@@ -49,20 +49,13 @@ function unwelcome() {
 }
 
 function showContent() {
+    const content = document.getElementById("content")
     const headline = document.getElementById("headline");
     const textbar = document.getElementById("textbar");
     textbar.style.display = 'flex';
     headline.style.display = 'flex';
+    content.classList.add("index")
 }
-
-// function welcomeRespond() {
-//     if (window.innerWidth <= 950) {
-//         const headline = document.getElementById("headline");
-//         const textbar = document.getElementById("textbar");
-//         headline.setAttribute("class", "headline-mobile");
-//         textbar.setAttribute("class", "textbar-mobile");
-//     }
-// }
 
 // **************
 // WELCOME COOKIE
