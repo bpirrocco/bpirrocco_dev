@@ -379,6 +379,26 @@ a:active {
 
 }
 
+@media only screen and (max-width: 600px) {
+
+    .to {
+        left: 5%;
+    }
+
+    .headline h1 {
+        left: 8%;
+    }
+
+}
+
+@media only screen and (max-width: 475px) {
+
+    .to, .headline h1 {
+        left: 0;
+    }
+    
+}
+
 // ******************
 // ABOUT PAGE STYLING
 // ******************
