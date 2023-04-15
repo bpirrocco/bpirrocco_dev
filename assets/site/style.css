@@ -99,6 +99,8 @@ header nav li a {
 }
 
 .index {
+  overflow-x: hidden;
+  overflow-y: auto;
   flex-direction: column;
   align-items: stretch;
   justify-content: flex-start;
@@ -260,11 +262,15 @@ header nav li a {
   -webkit-animation: fade 3s ease 1 forwards;
           animation: fade 3s ease 1 forwards;
   min-height: 50%;
+  flex-direction: row-reverse;
+  align-items: flex-end;
 }
 
 .textbox {
-  display: flex;
-  flex-direction: column-reverse;
+  max-width: 43%;
+  max-height: 50%;
+  margin-right: 5rem;
+  margin-bottom: 5rem;
 }
 
 h1 {
@@ -296,7 +302,6 @@ p {
 }
 
 .homep {
-  position: relative;
   border-style: none solid solid none;
   border-color: var(--secondary-color);
   border-width: 1px;
@@ -329,6 +334,17 @@ a:active {
   color: var(--secondary-dark);
 }
 
+@media only screen and (max-width: 1000px) {
+  .textbox {
+    max-width: 433px;
+    margin: 0rem 2rem 5rem 2rem;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .headline h1 {
+    left: 15%;
+  }
+}
 .about {
   display: flex;
   flex-direction: row;
