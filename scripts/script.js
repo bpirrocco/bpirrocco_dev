@@ -18,6 +18,10 @@
 // TODO: Now that I know how to do it, I should programmatically set
 //       the bounce heights and final heights for all of the welcome divs
 
+// ^^^^^^
+
+// TODO: Reformat script file to be more in line with industry conventions
+
 function getContentHeight() {
     const content = document.getElementById("content");
     return content.offsetHeight;   
