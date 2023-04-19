@@ -106,50 +106,50 @@
 // ********************
 
 
-function setWrapperDim() {
-    const wrapper = document.querySelector(".wrapper");
-    const textBox = document.querySelector(".textBox");
-    // textBoxHeight = textBox.offsetHeight;
-    let textBoxWidth = textBox.clientWidth;
-    // textBoxHeight = `${textBoxHeight}px`;
-    textBoxWidth = `${textBoxWidth}px`;
-    // wrapper.style.setProperty("--height", textBoxHeight);
-    wrapper.style.setProperty("--width", textBoxWidth);
-}
+// function setWrapperDim() {
+//     const wrapper = document.querySelector(".wrapper");
+//     const textBox = document.querySelector(".textBox");
+//     // textBoxHeight = textBox.offsetHeight;
+//     let textBoxWidth = textBox.clientWidth;
+//     // textBoxHeight = `${textBoxHeight}px`;
+//     textBoxWidth = `${textBoxWidth}px`;
+//     // wrapper.style.setProperty("--height", textBoxHeight);
+//     wrapper.style.setProperty("--width", textBoxWidth);
+// }
 
-function moveContact() {
-    if (window.innerWidth <= 1150) {
-        document.getElementById("thirdPage").appendChild(document.getElementById("wrapper"));
-    };
-}
+// function moveContact() {
+//     if (window.innerWidth <= 1150) {
+//         document.getElementById("thirdPage").appendChild(document.getElementById("wrapper"));
+//     };
+// }
 
-function moveAbout() {
-    if (window.innerWidth <= 715) {
-        document.getElementById("thirdPage").appendChild(document.
-        getElementById("textBox"));
-    }
-}
+// function moveAbout() {
+//     if (window.innerWidth <= 715) {
+//         document.getElementById("thirdPage").appendChild(document.
+//         getElementById("textBox"));
+//     }
+// }
 
-function removeContact() {
-    const div = document.getElementById("twoThirdPage");
-    if (window.innerWidth > 1150) {
-        div.insertBefore(document.getElementById("wrapper"), div.firstChild);
-    }
-}
+// function removeContact() {
+//     const div = document.getElementById("twoThirdPage");
+//     if (window.innerWidth > 1150) {
+//         div.insertBefore(document.getElementById("wrapper"), div.firstChild);
+//     }
+// }
 
-function removeAbout() {
-    if (window.innerWidth > 715) {
-        document.getElementById("twoThirdPage").appendChild(document.getElementById("textBox"));
-    }
-}
+// function removeAbout() {
+//     if (window.innerWidth > 715) {
+//         document.getElementById("twoThirdPage").appendChild(document.getElementById("textBox"));
+//     }
+// }
 
-function setMobileBodyHeight() {
-    if(window.innerHeight < 525) {
-        let height = window.innerHeight * 2.5;
-        height = `${Math.floor(height)}px`;
-        document.getElementById("aboutB").style.setProperty("--height", height)
-    }
-}
+// function setMobileBodyHeight() {
+//     if(window.innerHeight < 525) {
+//         let height = window.innerHeight * 2.5;
+//         height = `${Math.floor(height)}px`;
+//         document.getElementById("aboutB").style.setProperty("--height", height)
+//     }
+// }
 
 
 // *******************
