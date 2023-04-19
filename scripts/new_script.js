@@ -18,7 +18,11 @@ const app = {
                 break;
             case 'aboutB':
                 app.aboutScript();
-                document.addEventListener('resize', app.aboutScript());
+                // document.body.addEventListener('resize', app.moveAbout());
+                // document.body.addEventListener('resize', app.removeAbout());
+                // document.body.addEventListener('resize', app.moveContact());
+                // document.body.addEventListener('resize', app.removeContact());
+                window.onresize = app.aboutScript;
                 break;
         }
     },
@@ -137,9 +141,19 @@ const app = {
         }
         else {
             const div = document.getElementById("twoThirdPage");
+
             div.insertBefore(document.getElementById("wrapper"), div.firstChild);
         }
     },
+
+    // removeContact: () => {
+    //     const div = document.getElementById("twoThirdPage");
+
+    //     if (window.innerWidth > 1150) {
+    //         div.insertBefore(document.getElementById("wrapper"), div.firstChild);
+    //     }
+    //     console.log('Firing')
+    // },
 
     moveAbout: () => {
         if (window.innerWidth <= 715) {
@@ -151,10 +165,19 @@ const app = {
         }
     },
 
+    // removeAbout: () => {
+    //     if (window.innerWidth > 715) {
+    //         document.getElementById("twoThirdPage").appendChild(document.getElementById("textBox"));
+    //     }
+    //     console.log('Firing')
+    // },
+
     aboutScript: () => {
         app.setWrapperDim();
         app.moveContact();
         app.moveAbout();
+        // app.removeAbout();
+        // app.removeContact();
     }
 }
 app.init()
