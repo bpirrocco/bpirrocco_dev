@@ -7,14 +7,16 @@ const app = {
 
     load: () => {
         app.runScript();
+        console.log('Script Run');
     },
 
     runScript: () => {
         let page = document.body.id;
         switch (page) {
             case 'home':
-                app.setNavbarComp;
-                app.checkCookie;
+                console.log('This is the home script')
+                app.setNavbarComp();
+                app.checkCookie();
                 break;
             
         }
@@ -43,6 +45,7 @@ const app = {
         for(i=0; i<blueList.length; i++) {
         blueList[i].style.setProperty('--navbar-comp', navbarComp);
         }
+        console.log('Navbar comp')
     },
 
     unwelcome: () => {
@@ -62,14 +65,14 @@ const app = {
         content.classList.add("index")
     },
 
-    setCookie: () => {
+    setCookie: (cname, cvalue, exdays) => {
         const d = new Date();
         d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
         let expires = "expires="+ d.toUTCString();
         document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
     },
 
-    getCookie: () => {
+    getCookie: (cname) => {
         let name = cname + "=";
         let decodedCookie = decodeURIComponent(document.cookie);
         let ca = decodedCookie.split(';');
