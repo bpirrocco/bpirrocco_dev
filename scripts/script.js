@@ -143,13 +143,13 @@ function removeAbout() {
     }
 }
 
-function setMobileBodyHeight() {
-    if(window.innerHeight < 525) {
-        let height = window.innerHeight * 2.5;
-        height = `${Math.floor(height)}px`;
-        document.getElementById("aboutB").style.setProperty("--height", height)
-    }
-}
+// function setMobileBodyHeight() {
+//     if(window.innerHeight < 525) {
+//         let height = window.innerHeight * 2.5;
+//         height = `${Math.floor(height)}px`;
+//         document.getElementById("aboutB").style.setProperty("--height", height)
+//     }
+// }
 
 
 // *******************

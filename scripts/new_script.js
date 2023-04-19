@@ -7,20 +7,31 @@ const app = {
 
     load: () => {
         app.runScript();
-        console.log('Script Run');
     },
 
     runScript: () => {
         let page = document.body.id;
         switch (page) {
             case 'home':
-                console.log('This is the home script')
                 app.setNavbarComp();
                 app.checkCookie();
                 break;
-            
+            case 'aboutB':
+                app.aboutScript();
+                // document.body.addEventListener('resize', app.moveAbout());
+                // document.body.addEventListener('resize', app.removeAbout());
+                // document.body.addEventListener('resize', app.moveContact());
+                // document.body.addEventListener('resize', app.removeContact());
+                window.onresize = app.aboutScript;
+                break;
         }
     },
+
+
+    // *******************
+    // Home Page Functions
+    // *******************
+
 
     getContentHeight: () => {
         const content = document.getElementById("content");
@@ -65,6 +76,12 @@ const app = {
         content.classList.add("index")
     },
 
+
+    // ****************
+    // Cookie Functions
+    // ****************
+
+
     setCookie: (cname, cvalue, exdays) => {
         const d = new Date();
         d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
@@ -101,5 +118,66 @@ const app = {
             app.setCookie("welcome", true, 1);
         }
     },
+
+
+    // ********************
+    // About Page Functions
+    // ********************
+
+
+    setWrapperDim: () => {
+        const wrapper = document.querySelector(".wrapper");
+        const textBox = document.querySelector(".textBox");
+        
+        let textBoxWidth = textBox.clientWidth;
+        
+        textBoxWidth = `${textBoxWidth}px`;
+        wrapper.style.setProperty("--width", textBoxWidth);
+    },
+
+    moveContact: () => {
+        if (window.innerWidth <= 1150) {
+            document.getElementById("thirdPage").appendChild(document.getElementById("wrapper"));
+        }
+        else {
+            const div = document.getElementById("twoThirdPage");
+
+            div.insertBefore(document.getElementById("wrapper"), div.firstChild);
+        }
+    },
+
+    // removeContact: () => {
+    //     const div = document.getElementById("twoThirdPage");
+
+    //     if (window.innerWidth > 1150) {
+    //         div.insertBefore(document.getElementById("wrapper"), div.firstChild);
+    //     }
+    //     console.log('Firing')
+    // },
+
+    moveAbout: () => {
+        if (window.innerWidth <= 715) {
+            document.getElementById("thirdPage").appendChild(document.
+            getElementById("textBox"));
+        }
+        else {
+            document.getElementById("twoThirdPage").appendChild(document.getElementById("textBox"));
+        }
+    },
+
+    // removeAbout: () => {
+    //     if (window.innerWidth > 715) {
+    //         document.getElementById("twoThirdPage").appendChild(document.getElementById("textBox"));
+    //     }
+    //     console.log('Firing')
+    // },
+
+    aboutScript: () => {
+        app.setWrapperDim();
+        app.moveContact();
+        app.moveAbout();
+        // app.removeAbout();
+        // app.removeContact();
+    }
 }
 app.init()
