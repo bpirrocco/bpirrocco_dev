@@ -15,6 +15,7 @@ const app = {
             case 'home':
                 app.setNavbarComp();
                 app.checkCookie();
+                app.moveDev();
                 break;
             case 'aboutB':
                 app.aboutScript();
@@ -75,13 +76,20 @@ const app = {
     },
 
     showContent: () => {
-        const content = document.getElementById("content")
+        const content = document.getElementById("content");
         const headline = document.getElementById("headline");
         const textbar = document.getElementById("textbar");
 
         textbar.style.display = 'flex';
         headline.style.display = 'flex';
         content.classList.add("index")
+    },
+
+    moveDev: () => {
+        if (window.innerWidth <= 450) {
+            const dev = document.getElementById("dev");
+            dev.textContent += "\r\n";
+        }
     },
 
 
