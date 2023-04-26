@@ -87,8 +87,10 @@ const app = {
 
     moveDev: () => {
         if (window.innerWidth <= 450) {
-            const dev = document.getElementById("dev");
-            dev.textContent += "\r\n";
+            const h = document.getElementById("title");
+            const dev = document.getElementById("dev")
+            const br = document.createElement("br");
+            h.replaceChild(br, dev);
         }
     },
 
