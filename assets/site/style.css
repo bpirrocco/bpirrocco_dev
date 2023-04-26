@@ -326,6 +326,10 @@ a {
   font-size: 7rem;
 }
 
+#dev {
+  font-size: 7rem;
+}
+
 a:hover {
   color: var(--secondary-color);
 }
@@ -344,6 +348,33 @@ a:active {
   .headline h1 {
     left: 15%;
   }
+  .big {
+    font-size: 7rem;
+  }
+  .small {
+    font-size: 5rem;
+  }
+  .W {
+    --length: 12rem;
+  }
+  .blueBounce {
+    --length: 8rem;
+  }
+  .L, .M {
+    --bounce-offset: -300px;
+    --length: 9rem;
+    padding: 0rem;
+  }
+  .M {
+    padding-left: 0.2rem;
+    padding-bottom: 0.3rem;
+  }
+  .O, .E2 {
+    --bounce-offset: -310px;
+    --length: 6rem;
+    padding-left: 0.1rem;
+    padding-bottom: 0.3rem;
+  }
 }
 @media only screen and (max-width: 600px) {
   .to {
@@ -352,10 +383,69 @@ a:active {
   .headline h1 {
     left: 8%;
   }
+  .big {
+    font-size: 6rem;
+  }
+  .small {
+    font-size: 4rem;
+  }
+  .W {
+    --length: 10rem;
+  }
+  .blueBounce {
+    --length: 6rem;
+  }
+  .L, .M {
+    --bounce-offset: -300px;
+    --length: 7rem;
+    padding: 0rem;
+  }
+  .M {
+    padding-left: 0.2rem;
+    padding-bottom: 0.3rem;
+  }
+  .O, .E2 {
+    --bounce-offset: -310px;
+    --length: 5rem;
+    padding-left: 0.1rem;
+    padding-bottom: 0.3rem;
+  }
 }
 @media only screen and (max-width: 475px) {
   .to, .headline h1 {
     left: 0;
+  }
+  .headline {
+    padding-bottom: 0rem;
+  }
+  .big {
+    font-size: 5rem;
+  }
+  .small {
+    font-size: 4rem;
+  }
+  .W {
+    --bounce-offset: -300px;
+    --length: 8rem;
+  }
+  .blueBounce {
+    --bounce-offset: -310px;
+    --length: 5rem;
+  }
+  .L, .M {
+    --bounce-offset: -320px;
+    --length: 4rem;
+    padding: 0rem;
+  }
+  .M {
+    padding-left: 0.2rem;
+    padding-bottom: 0.3rem;
+  }
+  .O, .E2 {
+    --bounce-offset: -320px;
+    --length: 4rem;
+    padding-left: 0.1rem;
+    padding-bottom: 0.3rem;
   }
 }
 .about {
@@ -586,6 +676,7 @@ li a {
   }
   .cardBox {
     overflow-y: scroll;
+    padding-top: 15rem;
   }
   .cardWrapper {
     margin-top: var(--margin);
