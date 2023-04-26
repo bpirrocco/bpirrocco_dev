@@ -89,6 +89,10 @@ header nav li a {
   text-decoration: none;
 }
 
+.icon {
+  display: none;
+}
+
 .content {
   display: flex;
   align-items: flex-end;
