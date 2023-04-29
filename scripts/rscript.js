@@ -23,8 +23,10 @@ function checkCookie() {
 
 async function getCount() {
     const response = await fetch("https://l0qqg7foje.execute-api.us-east-1.amazonaws.com/default/counter_function");
-    const count = await response.json();
-    console.log(count);
+    // const count = await response.json();
+    // console.log(count);
+    // count.
+    return response;
 }
 
 // Need to enable CORS on the API Gateway or the Lambda Function
@@ -32,6 +34,7 @@ async function getCount() {
 function updateCounter() {
     const counter = document.getElementById("counter");
     // let value = checkCookie();
-    let value = getCount();
-    counter.textContent = value;
+    getCount()
+        .then((result) => result.json())
+        .then((result) => counter.textContent = result);
 }
