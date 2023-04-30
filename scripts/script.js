@@ -11,6 +11,7 @@ const app = {
 
     runScript: () => {
         let page = document.body.id;
+        app.mobileNav();
         switch (page) {
             case 'home':
                 app.setNavbarComp();
@@ -92,6 +93,19 @@ const app = {
             const br = document.createElement("br");
             h.replaceChild(br, dev);
         }
+    },
+
+    mobileNav: () => {
+        const icon = document.getElementById("icon");
+        const nav = document.getElementById("nav");
+        icon.addEventListener("click", () => {
+            if (nav.className === "nav") {
+                nav.className += "responsive";
+                console.log("Firing!")
+            } else {
+                nav.className = "nav";
+            }
+        })
     },
 
 
