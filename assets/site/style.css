@@ -93,6 +93,29 @@ header nav li a {
   display: none;
 }
 
+@media only screen and (max-width: 600px) {
+  .icon {
+    display: block;
+    float: right;
+  }
+  .nav-item,
+.secondary {
+    display: none;
+  }
+  .responsive {
+    position: relative;
+  }
+  .responsive li a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .responsive li a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
 .content {
   display: flex;
   align-items: flex-end;
