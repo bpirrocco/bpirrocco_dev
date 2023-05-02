@@ -11,12 +11,12 @@ const app = {
 
     runScript: () => {
         let page = document.body.id;
-        app.mobileNav();
         switch (page) {
             case 'home':
                 app.setNavbarComp();
                 app.checkCookie();
                 app.moveDev();
+                app.mobileNav();
                 break;
             case 'aboutB':
                 app.aboutScript();
