@@ -98,12 +98,15 @@ const app = {
     mobileNav: () => {
         const icon = document.getElementById("icon");
         const nav = document.getElementById("nav");
+        const navItems = document.querySelectorAll(".nav-item")
         icon.addEventListener("click", () => {
             if (nav.className === "nav") {
-                nav.className += "responsive";
-                console.log("Firing!")
+                nav.style.display = "block";
+                navItems.forEach((el) => el.style.display = "block");
+                console.log("Firing!");
             } else {
-                nav.className = "nav";
+                nav.style.display = "flex";
+                navItems.forEach((el) => el.style.display = "none");
             }
         })
     },
