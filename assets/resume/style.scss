@@ -77,7 +77,6 @@ h1 {
 
 h2 {
     font-size: 2rem;
-    line-height: 2;
 }
 
 .titleTag h2 {
@@ -86,7 +85,6 @@ h2 {
 
 h3 {
     font-size: 1.8rem;
-    line-height: 2;
 }
 
 div h3:not(:first-child) {
@@ -131,4 +129,18 @@ b {
     line-height: 1.6;
     color: navy;
     font-weight: bold;
+}
+
+
+// *************
+// Mobile Layout
+// *************
+
+
+@media only screen and (max-width: 600px) {
+
+    .mainBox {
+        margin-top: 10rem;
+    }
+
 }
