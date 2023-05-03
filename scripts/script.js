@@ -2,7 +2,6 @@ const app = {
 
     init: () => {
         document.addEventListener('DOMContentLoaded', app.load);
-        console.log('HTML loaded');
     },
 
     load: () => {
@@ -62,7 +61,6 @@ const app = {
         for(i=0; i<blueList.length; i++) {
         blueList[i].style.setProperty('--navbar-comp', navbarComp);
         }
-        console.log('Navbar comp')
     },
 
     unwelcome: () => {
