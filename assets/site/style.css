@@ -670,9 +670,17 @@ li a {
   transition-timing-function: linear;
 }
 
+.pCard p, .pCard a {
+  font-size: 2rem;
+}
+
 .pCard:hover {
   transform: translate(-1rem, -1rem);
   box-shadow: 1.5rem 1.5rem 0 0 var(--primary-color);
+}
+
+.spacer {
+  display: none;
 }
 
 @-webkit-keyframes slideIn {
@@ -700,14 +708,11 @@ li a {
 }
 @media only screen and (max-width: 720px) {
   .pBody {
-    max-height: 100vh;
-  }
-  .cardBox {
-    overflow-y: scroll;
-    padding-top: 15rem;
+    min-height: 125vh;
   }
   .cardWrapper {
     margin-top: var(--margin);
+    margin-bottom: var(--margin);
     max-height: 100vh;
     flex-direction: column;
     justify-content: flex-start;
@@ -718,11 +723,15 @@ li a {
     margin: 2rem;
     min-width: 85vw;
   }
+  .pCard p, .pCard a {
+    font-size: 2rem;
+  }
   .third:first-child {
     margin-left: 0rem;
   }
   .third:last-child {
     margin-right: 0rem;
+    margin-bottom: 10rem;
   }
 }
 .error {

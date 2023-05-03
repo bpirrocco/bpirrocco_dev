@@ -193,9 +193,9 @@ const app = {
 
     setPortfolioMargin: () => {
         const cardWrapper = document.getElementById("cardWrapper");
-        const navbarHeight = getNavHeight();
+        const navbarHeight = app.getNavHeight();
 
-        let margin = navbarHeight + 100;
+        let margin = navbarHeight;
 
         margin = `${margin}px`
         cardWrapper.style.setProperty("--margin", margin);
