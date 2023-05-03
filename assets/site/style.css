@@ -102,6 +102,20 @@ header nav li a {
 .secondary {
     display: none;
   }
+  .nav {
+    display: block;
+  }
+  header nav li {
+    display: block;
+  }
+  .mob {
+    float: none;
+    display: block;
+  }
+  .mob1 {
+    float: none;
+    display: block;
+  }
 }
 .content {
   display: flex;
