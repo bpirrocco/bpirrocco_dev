@@ -103,6 +103,10 @@ a {
   color: black;
 }
 
+.inline {
+  font-weight: bold;
+}
+
 em {
   font-size: 1.4rem;
 }

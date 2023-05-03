@@ -11,19 +11,15 @@ const app = {
 
     runScript: () => {
         let page = document.body.id;
+        app.mobileNav();
         switch (page) {
             case 'home':
                 app.setNavbarComp();
                 app.checkCookie();
                 app.moveDev();
-                app.mobileNav();
                 break;
             case 'aboutB':
                 app.aboutScript();
-                // document.body.addEventListener('resize', app.moveAbout());
-                // document.body.addEventListener('resize', app.removeAbout());
-                // document.body.addEventListener('resize', app.moveContact());
-                // document.body.addEventListener('resize', app.removeContact());
                 window.onresize = app.aboutScript;
                 break;
             case 'pBody':
@@ -98,13 +94,10 @@ const app = {
     mobileNav: () => {
         const icon = document.getElementById("icon");
         const nav = document.getElementById("nav");
+        const navItems = document.querySelectorAll(".nav-item")
         icon.addEventListener("click", () => {
-            if (nav.className === "nav") {
-                nav.className += "responsive";
-                console.log("Firing!")
-            } else {
-                nav.className = "nav";
-            }
+            navItems[0].classList.toggle("mob")
+            navItems[1].classList.toggle("mob1")
         })
     },
 
