@@ -5,7 +5,7 @@
 
 // function visitCounter() {
     // const body = document.getElementById("resume");
-// window.addEventListener("DOMContentLoaded", updateCounter)
+window.addEventListener("DOMContentLoaded", updateCounter)
 
 // }
 
