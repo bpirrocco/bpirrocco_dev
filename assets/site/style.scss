@@ -765,6 +765,7 @@ li a {
 
 .pCard {
     display: flex;
+    flex-direction: column;
     height: 65vh;
     min-width: 30vw;
     margin: 2rem;
