@@ -684,6 +684,10 @@ li a {
   display: none;
 }
 
+.portfolio-detail {
+  margin: 1.5rem;
+}
+
 @-webkit-keyframes slideIn {
   from {
     transform: translateX(2000px);
