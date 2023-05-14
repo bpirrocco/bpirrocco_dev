@@ -746,15 +746,6 @@ li a {
     align-items: center;
 }
 
-// .third {
-//     min-width: 30vw;
-//     min-height: 100vh;
-//     display: flex;
-//     align-items: center;
-//     justify-content: center;
-//     flex: 1 1 auto ;
-// }
-
 .third:first-child {
     margin-left: 2rem;
 }
@@ -764,17 +755,13 @@ li a {
 }
 
 .pCard {
-    display: flex;
-    flex-direction: column;
+    // display: flex;
+    // flex-direction: column;
     height: 65vh;
     min-width: 30vw;
     margin: 2rem;
     background-color: var(--primary-light);
     padding: 1rem;
-    // animation: 
-    //     slideIn 3s
-    //     ease
-    //     1 forwards;
     overflow-y: scroll;
     scrollbar-width: none;
     transition-property: transform, box-shadow;
@@ -784,6 +771,10 @@ li a {
 
 .pCard p, .pCard a {
     font-size: 2rem;
+}
+
+.pCard p {
+    margin: 0 2rem;
 }
 
 .pCard:hover {
@@ -796,7 +787,8 @@ li a {
 }
 
 .portfolio-detail {
-    margin: 1.5rem;
+    margin: 2rem;
+    border-radius: .25rem;
 }
 
 @keyframes slideIn {
@@ -847,13 +839,6 @@ li a {
         margin-right: 0rem;
         margin-bottom: 10rem;
     }
-
-    // .spacer {
-    //     display: block;
-    //     background-color: var(--primary-dark);
-    //     min-width: var(--margin);
-    //     min-height: var(--margin);
-    // }
 }
 
 

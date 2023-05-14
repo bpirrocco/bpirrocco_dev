@@ -50,11 +50,13 @@
                             <h3>bpirrocco.dev-</h3>
                             <p>
                                 <br><br>
-                                This site is built using just HTML, JavaScript, and some basic Sass. I really
-                                enjoyed experimenting with the features offered by vanilla JavaScript and a 
+                                This site is built without the us of any external frameworks or libraries. 
+                                Everything you see is HTML, vanilla JavaScript, and some basic Sass. I really
+                                enjoy experimenting with the features offered by vanilla JavaScript and a 
                                 little creative use of Sass. The site is hosted as a static site on AWS S3.
                                 The visit count you'll find on my <a href="resume.html">resume</a>, is generated
-                                using a call to an AWS API Gateway that interacts with Lambda and DynamoDB.
+                                using a call to an AWS API Gateway that interacts with a Python Script in a 
+                                Lambda function and DynamoDB.
                             </p>
                         </div>
                     </div>
@@ -66,7 +68,7 @@
                             <img 
                                 src="assets/imgs/wavare_homepage.png" 
                                 alt="Wavare Homepage" 
-                                class="portfolio-detail"
+                                class="portfolio-detail wav-home"
                             >
                             <p>
                                 A web application built with Python using the Django web framework.
@@ -80,7 +82,7 @@
                             >
                             <p>    
                                 The data for the app is auto-generated 
-                                by an apscheduler job that uses small library I wrote to produce
+                                by an apscheduler job that utilizes small library I wrote to produce
                                 JSON files that mimic wave height forecast data and saves them to 
                                 an RDS database.
                             </p>
@@ -124,8 +126,8 @@
                                 class="portfolio-detail"
                             >
                             <p>
-                            This app also has a user management system that allows users to easily access their
-                            favorite podcasts and channels from the company.
+                                This app also has a user management system that allows users to easily access their
+                                favorite podcasts and channels from the company.
                             </p>
                             <img 
                                 src="assets/imgs/content_agg_user_dash.png" 
