@@ -682,10 +682,6 @@ li a {
   box-shadow: 1.5rem 1.5rem 0 0 var(--primary-color);
 }
 
-.spacer {
-  display: none;
-}
-
 .portfolio-detail {
   margin: 2rem;
   border-radius: 0.25rem;
@@ -706,12 +702,6 @@ li a {
   }
   to {
     transform: translateX(0px);
-  }
-}
-@media only screen and (max-width: 1135px) {
-  .pCard {
-    min-width: 340px;
-    max-width: 340px;
   }
 }
 @media only screen and (max-width: 720px) {

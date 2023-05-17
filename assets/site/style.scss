@@ -755,8 +755,6 @@ li a {
 }
 
 .pCard {
-    // display: flex;
-    // flex-direction: column;
     height: 65vh;
     min-width: 30vw;
     margin: 2rem;
@@ -782,10 +780,6 @@ li a {
     box-shadow: 1.5rem 1.5rem 0 0 var(--primary-color);
 }
 
-.spacer {
-    display: none;
-}
-
 .portfolio-detail {
     margin: 2rem;
     border-radius: .25rem;
@@ -797,13 +791,6 @@ li a {
     }
     to {
         transform: translateX(0px);
-    }
-}
-
-@media only screen and (max-width: 1135px) {
-    .pCard {
-        min-width: 340px;
-        max-width: 340px;
     }
 }
 
