@@ -704,6 +704,11 @@ li a {
     transform: translateX(0px);
   }
 }
+@media only screen and (max-width: 1135px) {
+  .pCard {
+    min-width: 340px;
+  }
+}
 @media only screen and (max-width: 720px) {
   .pBody {
     min-height: 125vh;
